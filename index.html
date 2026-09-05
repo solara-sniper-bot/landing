@@ -207,8 +207,8 @@ footer a{color:#a78bfa}
       <img src="software-box.png" alt="Solana Sniper Bot V4 software box">
     </div>
     <div class="cta-row">
-      <a href="download.html" class="btn btn-primary">Download Free — 7-Day Trial</a>
-      <a href="download.html" class="btn btn-secondary">Download for Windows</a>
+      <a href="download.html" class="btn btn-primary" onclick="trackDownload('primary')">Download Free — 7-Day Trial</a>
+      <a href="download.html" class="btn btn-secondary" onclick="trackDownload('secondary')">Download for Windows</a>
     </div>
   </div>
 </section>
@@ -464,8 +464,8 @@ footer a{color:#a78bfa}
   <div class="container">
     <h2 style="color:#a78bfa;font-size:1.8em;margin-bottom:20px">Ready to Start Trading?</h2>
     <div class="cta-row">
-      <a href="download.html" class="btn btn-primary">Download Free — 7-Day Trial</a>
-      <a href="download.html" class="btn btn-secondary">Download for Windows</a>
+      <a href="download.html" class="btn btn-primary" onclick="trackDownload('cta_bottom')">Download Free — 7-Day Trial</a>
+      <a href="download.html" class="btn btn-secondary" onclick="trackDownload('cta_bottom')">Download for Windows</a>
     </div>
     <p style="margin-top:20px;color:#a0a0b0;font-size:0.9em">
       7-day free trial — no credit card required · $49.99 first month (code SOLV4FIRST50) · $99.99/month after · Cancel anytime
@@ -478,6 +478,19 @@ footer a{color:#a78bfa}
   <p>Use at your own risk. On-chain trading is risky.</p>
   <p>Questions? Contact <a href="mailto:admin@solsniperbot.co">admin@solsniperbot.co</a> · <a href="mcp/">MCP Server</a> · <a href="download.html">Download</a></p>
 </footer>
+
+<script>
+// Track download button clicks with GA4
+function trackDownload(btn) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'download_click', {
+      event_category: 'download',
+      event_label: 'app_download_' + btn,
+      transport_type: 'beacon'
+    });
+  }
+}
+</script>
 
 </body>
 </html>
