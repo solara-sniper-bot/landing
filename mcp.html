@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Sniper Bot MCP — 281 AI Tools for Solana Trading | Claude, Cursor, Devin</title>
+    <meta name="description" content="281 MCP tools that let AI assistants (Claude, Cursor, Devin) control the Solana Sniper Bot V4 across four trading modes: Meme sniping, Spot trading, Perpetual futures, and Mirror copy-trading. Requires the Windows app.">
+    <meta name="keywords" content="MCP server, AI crypto trading, solana sniper bot MCP, Claude crypto trading, Cursor trading bot, Devin trading, Model Context Protocol, AI trading tools">
+    <meta property="og:title" content="Solana Sniper Bot MCP — 281 AI Tools for Solana Trading">
+    <meta property="og:description" content="Control a Solana trading bot with 281 MCP tools. Works with Claude, Cursor, Devin. Meme, Spot, Perps, Mirror Mode.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solsniperbot.co/mcp/">
+    <meta property="og:image" content="https://solsniperbot.co/mcp/mcp-software-box.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solana Sniper Bot MCP — 281 AI Tools">
+    <meta name="twitter:description" content="Control a Solana trading bot with 281 MCP tools. Works with Claude, Cursor, Devin.">
+    <link rel="canonical" href="https://solsniperbot.co/mcp/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Solana Sniper Bot MCP",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cross-platform",
+      "description": "MCP server with 281 tools for AI-controllable Solana trading across four modes. Requires the Solana Sniper Bot Windows application.",
+      "softwareVersion": "4.0.3",
+      "featureList": "281 MCP tools across four trading modes, Claude/Cursor/Devin compatible, bot control, configuration, P&L tracking, wallet management, spot and perp trading, mirror copy-trading"
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==================== TRIAL BANNER ==================== */
+        .trial-banner {
+            background: linear-gradient(90deg, rgba(80, 200, 120, 0.12) 0%, rgba(124, 58, 237, 0.12) 100%);
+            border-top: 1px solid rgba(80, 200, 120, 0.25);
+            border-bottom: 1px solid rgba(80, 200, 120, 0.25);
+            padding: 16px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .trial-banner-inner {
+            max-width: 880px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .trial-banner .trial-icon {
+            font-size: 20px;
+            flex: 0 0 auto;
+        }
+        .trial-banner .trial-text {
+            color: #e0e0e0;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .trial-banner .trial-text strong { color: #50c878; }
+        .trial-banner .trial-text .no-cc {
+            color: #a78bfa;
+            font-weight: 700;
+        }
+
+        /* ==================== TRIAL SECTION ==================== */
+        .trial-section {
+            background: linear-gradient(135deg, #0d0d18 0%, #111125 100%);
+            border-top: 1px solid #1e1e2e;
+            border-bottom: 1px solid #1e1e2e;
+            padding: 70px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .trial-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 600px; height: 300px;
+            background: radial-gradient(ellipse, rgba(80, 200, 120, 0.06) 0%, transparent 70%);
+            filter: blur(50px);
+            pointer-events: none;
+        }
+        .trial-section .trial-content {
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .trial-section .trial-badge {
+            display: inline-block;
+            background: rgba(80, 200, 120, 0.12);
+            border: 1px solid rgba(80, 200, 120, 0.3);
+            color: #50c878;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .trial-section h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 16px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        .trial-section h2 .highlight { color: #50c878; }
+        .trial-section .trial-sub {
+            font-size: 19px;
+            color: #c0c0d0;
+            margin-bottom: 40px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        .trial-section .trial-sub strong { color: #fff; }
+        .trial-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .trial-feature {
+            background: #14141e;
+            border: 1px solid #222230;
+            border-radius: 12px;
+            padding: 24px 20px;
+            transition: border-color 0.2s;
+        }
+        .trial-feature:hover { border-color: #50c878; }
+        .trial-feature .tf-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .trial-feature .tf-title {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .trial-feature .tf-desc {
+            color: #9090a8;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .trial-feature .tf-desc strong { color: #50c878; }
+        .trial-cta-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .trial-price-tag {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 6px;
+            background: #14141e;
+            border: 1px solid #222230;
+            border-radius: 10px;
+            padding: 12px 24px;
+        }
+        .trial-price-tag .price-label {
+            color: #707088;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .trial-price-tag .price-amount {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 800;
+        }
+        .trial-price-tag .price-note {
+            color: #50c878;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .trial-guarantee {
+            color: #a0a0b8;
+            font-size: 15px;
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        .trial-guarantee strong { color: #c0c0d0; font-style: normal; }
+
+        /* ==================== HERO ==================== */
+        .hero {
+            background: radial-gradient(ellipse at 70% 30%, #1a1a3e 0%, #0a0a0f 60%);
+            padding: 60px 20px 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%; left: 50%;
+            transform: translateX(-50%);
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.12) 0%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+        .hero-inner {
+            max-width: 880px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        .hero-box-art {
+            flex: 0 0 auto;
+            width: 440px;
+            height: 660px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-box-art::before {
+            content: '';
+            position: absolute;
+            width: 400px; height: 600px;
+            border-radius: 16px;
+            background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.3) 0%, rgba(80, 200, 120, 0.1) 50%, transparent 70%);
+            filter: blur(30px);
+            z-index: 0;
+        }
+        .hero-box-art img {
+            max-width: 420px;
+            max-height: 630px;
+            object-fit: contain;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 12px 40px rgba(0, 0, 0, 0.6));
+            animation: floatBox 6s ease-in-out infinite;
+        }
+        @keyframes floatBox {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.15);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            color: #a78bfa;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .hero-text h1 {
+            font-size: 42px;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .hero-text h1 .accent { color: #a78bfa; }
+        .hero-text .tagline {
+            font-size: 18px;
+            color: #a0a0b8;
+            margin-bottom: 24px;
+            max-width: 480px;
+        }
+        .compat-badges {
+            margin-bottom: 24px;
+        }
+        .compat-badges span {
+            display: inline-block;
+            background: #14141e;
+            border: 1px solid #222230;
+            color: #c0c0d0;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 4px 4px 4px 0;
+        }
+        .hero-cta {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #50c878;
+            color: #0a0a0f;
+            padding: 22px 40px;
+            min-width: 340px;
+            font-size: 19px;
+            font-weight: 800;
+            border-radius: 14px;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: 0 4px 24px rgba(80, 200, 120, 0.35);
+            letter-spacing: -0.3px;
+        }
+        .hero-cta .cta-top {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            color: #0a0a0f;
+        }
+        .hero-cta .cta-main {
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 4px;
+            color: #0a0a0f;
+        }
+        .hero-cta .cta-sub {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0a0a0f;
+            line-height: 1.4;
+        }
+        .hero-cta .cta-sub strong {
+            font-weight: 900;
+            color: #0a0a0f;
+        }
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(80, 200, 120, 0.5);
+        }
+        .hero-micro {
+            font-size: 14px;
+            color: #707088;
+        }
+        .hero-micro code {
+            color: #50c878;
+            background: #14141e;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        /* ==================== STAT BAR ==================== */
+        .stat-bar {
+            background: #111118;
+            border-top: 1px solid #1e1e2e;
+            border-bottom: 1px solid #1e1e2e;
+            padding: 28px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-item .stat-num {
+            font-size: 32px;
+            font-weight: 800;
+            color: #a78bfa;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .stat-item .stat-label {
+            font-size: 13px;
+            color: #707088;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ==================== SECTIONS ==================== */
+        .section {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .section h2 {
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 12px;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .section .subtitle {
+            text-align: center;
+            color: #a0a0b8;
+            font-size: 17px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ==================== REQUIREMENT BANNER ==================== */
+        .requirement {
+            background: rgba(251, 191, 36, 0.12);
+            border: 2px solid rgba(251, 191, 36, 0.55);
+            border-radius: 14px;
+            padding: 32px 32px;
+            margin: 0 auto 40px;
+            max-width: 760px;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            box-shadow: 0 0 28px rgba(251, 191, 36, 0.12);
+        }
+        .requirement .icon {
+            font-size: 32px;
+            flex: 0 0 auto;
+            line-height: 1;
+        }
+        .requirement .text {
+            color: #f0e6d0;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .requirement .text strong { color: #fbbf24; }
+        .requirement .text a { color: #a78bfa; text-decoration: none; font-weight: 700; }
+        .requirement .text a:hover { text-decoration: underline; }
+        .requirement .warning-label {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        /* ==================== INSTALL ==================== */
+        .install-card {
+            background: #14141e;
+            border: 1px solid #222230;
+            border-radius: 14px;
+            padding: 36px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .install-card h3 {
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .install-card .step-label {
+            color: #a78bfa;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .install-block {
+            background: #0a0a0f;
+            border: 1px solid #222230;
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            color: #50c878;
+            margin: 12px 0 24px;
+            overflow-x: auto;
+            white-space: pre;
+        }
+        .install-block .comment { color: #606078; }
+        .install-block .key { color: #a78bfa; }
+        .install-block .str { color: #50c878; }
+
+        /* ==================== TOOLS GRID ==================== */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+        .tool-category {
+            background: #14141e;
+            border: 1px solid #222230;
+            border-radius: 12px;
+            padding: 22px 20px;
+            transition: border-color 0.2s;
+        }
+        .tool-category:hover { border-color: #7c3aed; }
+        .tool-category h3 {
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .tool-category .count {
+            color: #a78bfa;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .tool-category ul {
+            list-style: none;
+            font-size: 13px;
+            color: #9090a8;
+        }
+        .tool-category li {
+            padding: 3px 0;
+            font-family: 'Consolas', monospace;
+        }
+
+        /* ==================== FINAL CTA ==================== */
+        .final-cta {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(ellipse at center, #1a1a3e 0%, #0a0a0f 70%);
+            position: relative;
+            overflow: hidden;
+        }
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px; height: 300px;
+            background: radial-gradient(ellipse, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+            filter: blur(40px);
+            pointer-events: none;
+        }
+        .final-cta h2 {
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 16px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+        }
+        .final-cta p {
+            color: #a0a0b8;
+            font-size: 17px;
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1;
+        }
+        .final-cta .hero-cta { position: relative; z-index: 1; }
+        .final-cta .secondary-link {
+            display: block;
+            margin-top: 16px;
+            color: #707088;
+            font-size: 14px;
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+        }
+        .final-cta .secondary-link:hover { color: #a78bfa; }
+
+        /* ==================== RISK ==================== */
+        .risk {
+            text-align: center;
+            color: #606078;
+            font-size: 12px;
+            padding: 24px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #505060;
+            font-size: 13px;
+            border-top: 1px solid #1e1e2e;
+        }
+        footer a { color: #707088; text-decoration: none; }
+        footer a:hover { color: #a78bfa; }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .hero { padding: 40px 16px 36px; }
+            .hero-inner { gap: 24px; }
+            .hero-text { text-align: center; min-width: 100%; }
+            .hero-text h1 { font-size: 30px; }
+            .hero-text .tagline { margin-left: auto; margin-right: auto; }
+            .hero-box-art { width: 300px; height: 450px; }
+            .hero-box-art img { max-width: 280px; max-height: 420px; }
+            .compat-badges span { margin: 4px; }
+            .stat-bar { gap: 24px; padding: 20px 16px; }
+            .stat-item .stat-num { font-size: 26px; }
+            .section { padding: 40px 16px; }
+            .section h2 { font-size: 24px; }
+            .install-card { padding: 24px 20px; }
+            .trial-section { padding: 50px 16px; }
+            .trial-section h2 { font-size: 28px; }
+            .final-cta h2 { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== TRIAL BANNER ==================== -->
+<div class="trial-banner">
+    <div class="trial-banner-inner">
+        <span class="trial-icon">&#10003;</span>
+        <span class="trial-text"><strong>7-Day Free Trial</strong> &mdash; <span class="no-cc">No credit card required.</span> Full unrestricted access to every feature.</span>
+    </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-box-art">
+            <img src="mcp-software-box.png" alt="Solana Sniper Bot MCP" width="420" height="630">
+        </div>
+        <div class="hero-text">
+            <span class="hero-badge">Model Context Protocol &middot; Solana Trading</span>
+            <h1>Control Your Solana Bot<br>with <span class="accent">AI</span></h1>
+            <p class="tagline">281 MCP tools that let Claude, Cursor, and Devin control every aspect of your Solana Sniper Bot V4 through natural language.</p>
+            <div class="compat-badges">
+                <span>Claude</span>
+                <span>Cursor</span>
+                <span>Devin</span>
+                <span>MCP Protocol</span>
+            </div>
+            <a href="https://solsniperbot.co/download.html" class="hero-cta">
+                <span class="cta-top">CLICK HERE TO</span>
+                <span class="cta-main">Download the Required Application</span>
+                <span class="cta-sub">Fully Functional (168-hour) Trial<br><strong>NO Credit Card Needed</strong></span>
+            </a>
+            <p class="hero-micro">No credit card needed. Then: <code>pip install solana-snipe-bot-mcp</code></p>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== STAT BAR ==================== -->
+<div class="stat-bar">
+    <div class="stat-item">
+        <div class="stat-num">281</div>
+        <div class="stat-label">MCP Tools</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-num" style="color:#a78bfa;">4</div>
+        <div class="stat-label">Trading Modes</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-num" style="color:#50c878;">7 Days</div>
+        <div class="stat-label">Free Trial &mdash; No CC</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-num">$49</div>
+        <div class="stat-label">First Month</div>
+    </div>
+</div>
+
+<!-- ==================== REQUIREMENT ==================== -->
+<section class="section" style="padding-bottom: 0;">
+    <div class="requirement">
+        <span class="icon">&#9888;</span>
+        <div class="text">
+            <span class="warning-label">Required</span><br>
+            <strong style="font-size:18px;">The MCP server is useless on its own.</strong><br>
+            It requires the <a href="https://solsniperbot.co/">Solana Sniper Bot Windows application</a> to be installed and running before any tool can communicate with the bot.
+        </div>
+    </div>
+</section>
+
+<!-- ==================== INSTALL ==================== -->
+<section class="section" style="padding-top: 20px;">
+    <h2>Install &amp; Connect</h2>
+    <p class="subtitle">Three steps. No build tools. No configuration files to write by hand.</p>
+    <div class="install-card">
+        <div class="step-label">Step 1 — Install the MCP Server</div>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">From PyPI:</p>
+        <div class="install-block">pip install solana-snipe-bot-mcp</div>
+
+        <div class="step-label">Step 2 — Configure Your AI Assistant</div>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">Set the project directory so the MCP server can find your bot's state files.</p>
+        <div class="install-block"><span class="comment"># Windows</span>
+set SOLANA_SNIPER_BOT_DIR=P:&#92;snipe-bot
+
+<span class="comment"># Or on the command line when launching</span>
+python -m solana_snipe_bot_mcp</div>
+
+        <h3 style="margin-top:22px;margin-bottom:8px;color:#fff;font-size:16px;">Claude Desktop</h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">Edit <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;">claude_desktop_config.json</code>:</p>
+        <div class="install-block">{
+  <span class="key">&quot;mcpServers&quot;</span>: {
+    <span class="key">&quot;solana-snipe-bot&quot;</span>: {
+      <span class="key">&quot;command&quot;</span>: <span class="str">&quot;python&quot;</span>,
+      <span class="key">&quot;args&quot;</span>: [<span class="str">&quot;-m&quot;</span>, <span class="str">&quot;solana_snipe_bot_mcp&quot;</span>],
+      <span class="key">&quot;env&quot;</span>: {
+        <span class="key">&quot;SOLANA_SNIPER_BOT_DIR&quot;</span>: <span class="str">&quot;P:&#92;&#92;snipe-bot&quot;</span>
+      }
+    }
+  }
+}</div>
+
+        <h3 style="margin-top:22px;margin-bottom:8px;color:#fff;font-size:16px;">Cursor</h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">Edit <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;">.cursor/mcp.json</code>:</p>
+        <div class="install-block">{
+  <span class="key">&quot;mcpServers&quot;</span>: {
+    <span class="key">&quot;solana-snipe-bot&quot;</span>: {
+      <span class="key">&quot;command&quot;</span>: <span class="str">&quot;python&quot;</span>,
+      <span class="key">&quot;args&quot;</span>: [<span class="str">&quot;-m&quot;</span>, <span class="str">&quot;solana_snipe_bot_mcp&quot;</span>],
+      <span class="key">&quot;env&quot;</span>: {
+        <span class="key">&quot;SOLANA_SNIPER_BOT_DIR&quot;</span>: <span class="str">&quot;P:&#92;&#92;snipe-bot&quot;</span>
+      }
+    }
+  }
+}</div>
+
+        <h3 style="margin-top:22px;margin-bottom:8px;color:#fff;font-size:16px;">Devin</h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">Add to <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;">mcp_config.json</code>:</p>
+        <div class="install-block">{
+  <span class="key">&quot;mcpServers&quot;</span>: {
+    <span class="key">&quot;snipe-bot&quot;</span>: {
+      <span class="key">&quot;command&quot;</span>: <span class="str">&quot;python&quot;</span>,
+      <span class="key">&quot;args&quot;</span>: [<span class="str">&quot;P:&#92;&#92;snipe-bot&#92;&#92;mcp_server.py&quot;</span>]
+    }
+  }
+}</div>
+
+        <h3 style="margin-top:22px;margin-bottom:8px;color:#fff;font-size:16px;">Claude Code</h3>
+        <div class="install-block" style="color:#c0c0d0;">claude mcp add solana-snipe-bot -- python -m solana_snipe_bot_mcp</div>
+
+        <h3 style="margin-top:22px;margin-bottom:8px;color:#fff;font-size:16px;">Any MCP Client (generic)</h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">The server uses stdio transport. Launch it with:</p>
+        <div class="install-block"><span class="comment"># Windows</span>
+set SOLANA_SNIPER_BOT_DIR=P:&#92;snipe-bot
+python -m solana_snipe_bot_mcp</div>
+
+        <div class="step-label">Step 3 — Start the Bot</div>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:8px;">Ask your AI assistant:</p>
+        <div class="install-block" style="color:#c0c0d0;">&quot;Start the Solana sniper bot&quot;</div>
+        <p style="color:#c0c0d0;font-size:14px;margin:10px 0 8px;">Then try:</p>
+        <div class="install-block" style="color:#c0c0d0;">&quot;What is my wallet balance and open positions?&quot;</div>
+    </div>
+</section>
+
+<!-- ==================== ARCHITECTURE ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2>Architecture</h2>
+    <p class="subtitle">How the MCP server talks to your bot.</p>
+    <div class="install-card">
+        <h3 style="margin-bottom:8px;color:#fff;font-size:16px;">MCP Server <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">solana_snipe_bot_mcp/server.py</code></h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:12px;">A standalone FastMCP server that:</p>
+        <ul style="color:#c0c0d0;font-size:14px;margin-bottom:20px;padding-left:20px;line-height:1.7;">
+            <li>Reads <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">config.json</code> and all bot state files from <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">SOLANA_SNIPER_BOT_DIR</code></li>
+            <li>Writes commands to <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">command_queue.json</code> for the running bot to poll</li>
+            <li>Exposes 281 tools grouped by function across Meme, Spot, Perpetual, and Mirror trading modes</li>
+            <li>Returns JSON summaries for config, positions, P&amp;L, Pulse, wallet, fees, and log</li>
+        </ul>
+
+        <h3 style="margin-bottom:8px;color:#fff;font-size:16px;">Bot <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">snipe_bot.py</code></h3>
+        <p style="color:#c0c0d0;font-size:14px;margin-bottom:12px;">The Windows bot that:</p>
+        <ul style="color:#c0c0d0;font-size:14px;padding-left:20px;line-height:1.7;">
+            <li>Subscribes to Solana WebSocket for new token launches</li>
+            <li>Runs safety and market filters</li>
+            <li>Executes Pump.fun bonding-curve or Jupiter swaps</li>
+            <li>Monitors open positions with take-profit, stop-loss, and rug signals</li>
+            <li>Writes state files that the MCP server reads</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ==================== TOOLS ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2>281 Tools at Your AI's Disposal</h2>
+    <p class="subtitle">Grouped by category. Your AI can call any of these through natural language.</p>
+    <div class="tools-grid">
+
+      <div class="tool-category">
+        <h3>Bot Control <span class="count">(6)</span></h3>
+        <ul>
+                <li>start_bot</li>
+                <li>stop_bot</li>
+                <li>sell_all</li>
+                <li>sell_position</li>
+                <li>buy_mint</li>
+                <li>get_bot_stats</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>RPC Pool <span class="count">(3)</span></h3>
+        <ul>
+                <li>get_rpc_pool_status</li>
+                <li>set_rpc_pool_key</li>
+                <li>set_rpc_pool_skip_until</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Configuration <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_config</li>
+                <li>update_config</li>
+                <li>update_config_batch</li>
+                <li>get_config_catalog</li>
+                <li>validate_current_config</li>
+                <li>preview_strategy_profile</li>
+                <li>apply_strategy_profile</li>
+                <li>save_settings</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Positions <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_open_positions</li>
+                <li>get_positions_status</li>
+                <li>get_graduation_status</li>
+                <li>audit_open_positions</li>
+                <li>get_position_exit_quote</li>
+                <li>close_position</li>
+                <li>get_bot_status</li>
+                <li>get_pending_commands</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Trade History & P&L <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_trade_history</li>
+                <li>analyze_trade_performance</li>
+                <li>clear_trade_history</li>
+                <li>get_pnl_tally</li>
+                <li>reset_pnl_tally</li>
+                <li>refresh_pnl</li>
+                <li>get_fee_summary</li>
+                <li>clear_commands</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Wallet <span class="count">(3)</span></h3>
+        <ul>
+                <li>get_wallet_balances</li>
+                <li>transfer_sol</li>
+                <li>move_all_sol</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Pulse Trends <span class="count">(6)</span></h3>
+        <ul>
+                <li>get_pulse_results</li>
+                <li>set_pulse_match_mode</li>
+                <li>clear_pulse_results</li>
+                <li>get_pulse_price_history</li>
+                <li>get_pulse_purchase_preview</li>
+                <li>buy_pulse_asset</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Trading Mode <span class="count">(1)</span></h3>
+        <ul>
+                <li>set_trading_mode</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Log & Commands <span class="count">(2)</span></h3>
+        <ul>
+                <li>get_log</li>
+                <li>clear_log</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>ATA Rent <span class="count">(1)</span></h3>
+        <ul>
+                <li>close_empty_token_accounts</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Safety & Filters <span class="count">(12)</span></h3>
+        <ul>
+                <li>set_meme_max_buy_amount</li>
+                <li>set_meme_min_buy_amount</li>
+                <li>set_meme_min_liquidity</li>
+                <li>set_meme_min_market_cap</li>
+                <li>set_meme_min_volume_24h</li>
+                <li>set_meme_min_holders</li>
+                <li>set_meme_max_token_age</li>
+                <li>set_meme_max_creator_holdings_pct</li>
+                <li>set_meme_max_positions</li>
+                <li>set_meme_position_size_pct</li>
+                <li>set_meme_slippage_bps</li>
+                <li>add_to_blacklist</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Exit Strategy <span class="count">(11)</span></h3>
+        <ul>
+                <li>set_meme_stop_loss_pct</li>
+                <li>set_meme_take_profit_pct</li>
+                <li>set_meme_tp_ladder_steps</li>
+                <li>set_meme_trailing_stop</li>
+                <li>set_meme_rug_detection</li>
+                <li>set_meme_volume_death_detection</li>
+                <li>set_meme_momentum_reversal</li>
+                <li>set_meme_position_timeout</li>
+                <li>enable_meme_stop_loss</li>
+                <li>enable_meme_take_profit_ladder</li>
+                <li>enable_meme_trailing_stop</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Signals & Auto-Buy <span class="count">(3)</span></h3>
+        <ul>
+                <li>enable_meme_auto_buy</li>
+                <li>enable_meme_signals</li>
+                <li>clear_meme_signals</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Savings & Alerts <span class="count">(4)</span></h3>
+        <ul>
+                <li>set_meme_auto_savings</li>
+                <li>set_meme_savings_threshold</li>
+                <li>set_meme_alert_threshold</li>
+                <li>set_meme_exposure</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Analytics <span class="count">(15)</span></h3>
+        <ul>
+                <li>get_meme_statistics</li>
+                <li>get_meme_win_rate</li>
+                <li>get_meme_total_pnl</li>
+                <li>get_meme_best_worst_trades</li>
+                <li>get_meme_portfolio_concentration</li>
+                <li>get_meme_market_stats</li>
+                <li>get_meme_pulse_summary</li>
+                <li>get_meme_risk_status</li>
+                <li>get_meme_signal_detail</li>
+                <li>get_meme_position_detail</li>
+                <li>get_meme_position_pnl</li>
+                <li>get_meme_position_timeout</li>
+                <li>get_meme_trade_detail</li>
+                <li>get_meme_pending_graduations</li>
+                <li>get_meme_graduated_tokens</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Tokens <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_trending_meme_tokens</li>
+                <li>search_meme_tokens</li>
+                <li>get_meme_alerts</li>
+                <li>add_to_whitelist</li>
+                <li>remove_from_whitelist</li>
+                <li>remove_from_blacklist</li>
+                <li>get_blacklist</li>
+                <li>get_whitelist</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Meme Risk Levels <span class="count">(2)</span></h3>
+        <ul>
+                <li>apply_risk_level</li>
+                <li>preview_risk_level</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Orders <span class="count">(5)</span></h3>
+        <ul>
+                <li>spot_market_buy</li>
+                <li>spot_market_sell</li>
+                <li>spot_limit_buy</li>
+                <li>cancel_spot_order</li>
+                <li>close_spot_position</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Configuration <span class="count">(6)</span></h3>
+        <ul>
+                <li>get_spot_config</li>
+                <li>update_spot_config</li>
+                <li>batch_update_spot_config</li>
+                <li>get_spot_config_field</li>
+                <li>validate_spot_config_values</li>
+                <li>get_spot_config_catalog</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Risk & DCA <span class="count">(10)</span></h3>
+        <ul>
+                <li>set_spot_risk_level</li>
+                <li>set_spot_max_exposure</li>
+                <li>set_spot_max_positions</li>
+                <li>set_spot_slippage</li>
+                <li>set_spot_dca_interval</li>
+                <li>set_spot_dca_steps</li>
+                <li>enable_spot_dca</li>
+                <li>enable_spot_rebalancing</li>
+                <li>set_spot_rebalance_threshold</li>
+                <li>set_spot_alert_threshold</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Positions & P&L <span class="count">(13)</span></h3>
+        <ul>
+                <li>get_spot_positions</li>
+                <li>get_spot_position_detail</li>
+                <li>get_spot_position_pnl</li>
+                <li>get_spot_trade_history</li>
+                <li>get_spot_trade_detail</li>
+                <li>get_spot_statistics</li>
+                <li>get_spot_win_rate</li>
+                <li>get_spot_total_pnl</li>
+                <li>get_spot_best_worst_trades</li>
+                <li>get_spot_portfolio_concentration</li>
+                <li>get_spot_trade_pnl_tally</li>
+                <li>reset_spot_pnl_tally</li>
+                <li>clear_spot_trade_history</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Markets & Data <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_spot_markets</li>
+                <li>get_spot_market_detail</li>
+                <li>get_spot_market_stats</li>
+                <li>search_spot_tokens</li>
+                <li>get_trending_spot_tokens</li>
+                <li>get_spot_quote</li>
+                <li>get_spot_swap_transaction</li>
+                <li>refresh_spot_markets</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Signals & Bot <span class="count">(11)</span></h3>
+        <ul>
+                <li>get_spot_signals</li>
+                <li>get_spot_signal_detail</li>
+                <li>clear_spot_signals</li>
+                <li>enable_spot_signals</li>
+                <li>get_spot_risk_status</li>
+                <li>get_spot_risk_levels</li>
+                <li>get_spot_alerts</li>
+                <li>start_spot_bot</li>
+                <li>stop_spot_bot</li>
+                <li>sell_all_spot</li>
+                <li>get_spot_bot_status</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Spot Wallet & Logs <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_spot_wallet_balances</li>
+                <li>get_spot_token_balance</li>
+                <li>transfer_spot_to_savings</li>
+                <li>add_allowed_spot_token</li>
+                <li>remove_allowed_spot_token</li>
+                <li>get_spot_bot_status</li>
+                <li>get_spot_logs</li>
+                <li>clear_spot_logs</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Positions <span class="count">(7)</span></h3>
+        <ul>
+                <li>open_perp_long</li>
+                <li>open_perp_short</li>
+                <li>close_perp_position</li>
+                <li>sell_all_perps</li>
+                <li>get_perp_positions</li>
+                <li>get_perp_position_detail</li>
+                <li>get_perp_position_pnl</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Configuration <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_perp_config</li>
+                <li>update_perp_config</li>
+                <li>update_perp_config_batch</li>
+                <li>get_perp_config_catalog</li>
+                <li>save_perp_settings</li>
+                <li>validate_perp_config_tool</li>
+                <li>set_perp_auto_execute</li>
+                <li>set_perp_dry_run</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Leverage & Margin <span class="count">(8)</span></h3>
+        <ul>
+                <li>set_perp_leverage</li>
+                <li>set_perp_max_leverage</li>
+                <li>set_perp_position_size</li>
+                <li>set_perp_max_exposure</li>
+                <li>set_perp_margin_mode</li>
+                <li>get_perp_margin_info</li>
+                <li>get_perp_margin_ratio</li>
+                <li>get_perp_liquidation_price</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Risk & Exits <span class="count">(10)</span></h3>
+        <ul>
+                <li>set_perp_stop_loss</li>
+                <li>set_perp_take_profit_ladder</li>
+                <li>set_perp_trailing_stop</li>
+                <li>set_perp_funding_exit</li>
+                <li>set_perp_liquidation_floor</li>
+                <li>set_perp_position_timeout</li>
+                <li>set_perp_direction</li>
+                <li>set_perp_auto_savings</li>
+                <li>get_perp_exposure</li>
+                <li>get_perp_risk_status</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Market Filters <span class="count">(6)</span></h3>
+        <ul>
+                <li>set_perp_market_filters</li>
+                <li>set_perp_allowed_tokens</li>
+                <li>set_perp_blocked_tokens</li>
+                <li>set_perp_signal_mode</li>
+                <li>enable_perp_signal</li>
+                <li>disable_perp_signal</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Orders <span class="count">(9)</span></h3>
+        <ul>
+                <li>set_perp_order_type</li>
+                <li>set_perp_slippage</li>
+                <li>set_perp_poll_intervals</li>
+                <li>set_perp_testnet</li>
+                <li>cancel_all_perp_orders</li>
+                <li>cancel_perp_order</li>
+                <li>modify_perp_order</li>
+                <li>get_perp_open_orders</li>
+                <li>get_perp_order_history</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Markets & Data <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_perp_markets</li>
+                <li>get_top_perp_markets</li>
+                <li>search_perp_markets</li>
+                <li>get_perp_market_detail</li>
+                <li>get_perp_market_stats</li>
+                <li>get_perp_candles</li>
+                <li>get_perp_orderbook</li>
+                <li>get_perp_price_changes</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp P&L & Analytics <span class="count">(14)</span></h3>
+        <ul>
+                <li>get_perp_pnl_tally</li>
+                <li>reset_perp_pnl_tally</li>
+                <li>get_perp_trade_history</li>
+                <li>get_perp_trade_detail</li>
+                <li>clear_perp_trade_history</li>
+                <li>get_perp_fee_summary</li>
+                <li>refresh_perp_pnl</li>
+                <li>analyze_perp_performance</li>
+                <li>get_perp_funding_cost</li>
+                <li>get_funding_rates</li>
+                <li>get_funding_history</li>
+                <li>get_liquidations</li>
+                <li>get_perp_correlation_matrix</li>
+                <li>get_perp_var_estimate</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Signals <span class="count">(5)</span></h3>
+        <ul>
+                <li>get_perp_signals</li>
+                <li>get_perp_signal_detail</li>
+                <li>get_perp_signal_summary</li>
+                <li>get_perp_signal_history</li>
+                <li>clear_perp_signal_history</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Bot Control & Wallet <span class="count">(7)</span></h3>
+        <ul>
+                <li>start_perp_bot</li>
+                <li>stop_perp_bot</li>
+                <li>get_perp_bot_status</li>
+                <li>get_perp_log</li>
+                <li>clear_perp_log</li>
+                <li>get_perp_wallet_balances</li>
+                <li>transfer_perp_sol</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Perp Risk Levels <span class="count">(2)</span></h3>
+        <ul>
+                <li>apply_perp_risk_level</li>
+                <li>preview_perp_risk_level</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Whale Management <span class="count">(6)</span></h3>
+        <ul>
+                <li>add_mirror_whale</li>
+                <li>remove_mirror_whale</li>
+                <li>toggle_mirror_whale</li>
+                <li>get_mirror_whales</li>
+                <li>get_mirror_whale_stats</li>
+                <li>get_all_mirror_whale_stats</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Configuration <span class="count">(9)</span></h3>
+        <ul>
+                <li>get_mirror_config</li>
+                <li>update_mirror_config_field</li>
+                <li>set_mirror_mode</li>
+                <li>set_mirror_allocation_pct</li>
+                <li>set_mirror_copy_sells</li>
+                <li>set_mirror_dry_run</li>
+                <li>set_mirror_max_trade_usd</li>
+                <li>set_mirror_stop_loss_pct</li>
+                <li>set_mirror_take_profit_pct</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Positions & Bot <span class="count">(6)</span></h3>
+        <ul>
+                <li>get_mirror_trades</li>
+                <li>clear_mirror_trade_history</li>
+                <li>sell_all_mirror_positions</li>
+                <li>get_mirror_bot_status</li>
+                <li>start_mirror_bot</li>
+                <li>stop_mirror_bot</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Technical Indicators <span class="count">(8)</span></h3>
+        <ul>
+                <li>get_all_indicators</li>
+                <li>get_rsi</li>
+                <li>get_macd</li>
+                <li>get_moving_averages</li>
+                <li>get_bollinger_bands</li>
+                <li>get_atr</li>
+                <li>get_volume_analysis</li>
+                <li>get_token_candles</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Market Data <span class="count">(5)</span></h3>
+        <ul>
+                <li>get_token_market_data</li>
+                <li>get_token_price</li>
+                <li>get_token_prices</li>
+                <li>get_sol_price</li>
+                <li>get_signal_summary</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TRIAL SECTION ==================== -->
+<section class="trial-section">
+    <div class="trial-content">
+        <span class="trial-badge">&#10003; No Credit Card Required</span>
+        <h2>Try It Free for <span class="highlight">7 Full Days</span></h2>
+        <p class="trial-sub">
+            Download the app, install the MCP server, and get <strong>168 hours of actual live trading time</strong> &mdash;
+            that's a full week of real bot-running access. <strong>No credit card. No signup form. No payment information requested at any point during the trial.</strong>
+            You get the same 100% full, unrestricted access as a paid license &mdash; every tool, every feature, every filter.
+        </p>
+
+        <div class="trial-features">
+            <div class="trial-feature">
+                <span class="tf-icon">&#128179;</span>
+                <div class="tf-title">No Credit Card Needed</div>
+                <div class="tf-desc">Download and start trading immediately. <strong>We never ask for payment information</strong> during the trial. Not now, not later &mdash; the trial is genuinely free.</div>
+            </div>
+            <div class="trial-feature">
+                <span class="tf-icon">&#128338;</span>
+                <div class="tf-title">168 Hours of Live Trading</div>
+                <div class="tf-desc">That's <strong>7 full days</strong> of actual bot-running time. The clock only ticks while the bot is actively live trading &mdash; not while you're browsing settings, configuring filters, or letting the app sit open.</div>
+            </div>
+            <div class="trial-feature">
+                <span class="tf-icon">&#10060;</span>
+                <div class="tf-title">Zero Restrictions</div>
+                <div class="tf-desc">During the trial you get <strong>100% full unrestricted access</strong> to every single feature. All 281 MCP tools, all safety filters, all exit rules, all four trading modes. Nothing is locked, nothing is watered down, nothing is demo-only.</div>
+            </div>
+            <div class="trial-feature">
+                <span class="tf-icon">&#129534;</span>
+                <div class="tf-title">Decide After Using It</div>
+                <div class="tf-desc">Use it for a full week. Trade with it. Test every strategy. <strong>If you find it valuable, continue with a $49.99 first month subscription and $99.99/month after that.</strong> Cancel anytime. If not, you've lost nothing &mdash; no payment was ever required.</div>
+            </div>
+        </div>
+
+        <div class="trial-cta-row">
+            <a href="https://solsniperbot.co/download.html" class="hero-cta">
+                <span class="cta-top">CLICK HERE TO</span>
+                <span class="cta-main">Start Your Free 7-Day Trial</span>
+                <span class="cta-sub">Download the Required Application<br><strong>NO Credit Card Needed</strong></span>
+            </a>
+            <div class="trial-price-tag">
+                <span class="price-label">After trial:</span>
+                <span class="price-amount">$49.99</span>
+                <span class="price-note">first month &middot; $99.99/mo after</span>
+            </div>
+        </div>
+
+        <p class="trial-guarantee">
+            The authors of this application believe that after giving you such an ample and generous amount of time to use the program &mdash;
+            a full week of unrestricted live trading &mdash; <strong>you will find it valuable and will continue your subscription.</strong>
+            That's why the trial exists: we'd rather you experience the full product, risk-free, than take our word for it.
+        </p>
+    </div>
+</section>
+
+<!-- ==================== FINAL CTA ==================== -->
+<section class="final-cta">
+    <h2>Ready to Trade with AI?</h2>
+    <p>Download the Windows app, install the MCP server, and start trading through natural language. <strong style="color:#50c878;">7-day free trial. No credit card required.</strong></p>
+    <a href="https://solsniperbot.co/download.html" class="hero-cta">
+        <span class="cta-top">CLICK HERE TO</span>
+        <span class="cta-main">Start Your Free 7-Day Trial</span>
+        <span class="cta-sub">Download the Required Application<br><strong>NO Credit Card Needed</strong></span>
+    </a>
+    <a href="https://pypi.org/project/solana-snipe-bot-mcp/" class="secondary-link">View on PyPI &rarr;</a>
+</section>
+
+<!-- ==================== RISK ==================== -->
+<div class="risk">
+    <strong>RISK DISCLAIMER:</strong> On-chain trading is extremely risky. This software does not guarantee profits. Safety filters reduce but do not eliminate risk. Trade only what you can afford to lose.
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    Solana Sniper Bot MCP &mdash; Proprietary Software.<br>
+    &copy; 2026 Solana Sniper Bot. All rights reserved.<br>
+    <a href="https://solsniperbot.co/">solsniperbot.co</a> &middot; <a href="mailto:admin@solsniperbot.co">admin@solsniperbot.co</a> &middot; <a href="https://github.com/solara-sniper-bot/MCP">GitHub</a>
+</footer>
+
+</body>
+</html>

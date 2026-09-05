@@ -1,0 +1,48 @@
+{
+  "manifest_version": "0.3",
+  "name": "solana-snipe-bot-mcp",
+  "display_name": "Solana Sniper Bot MCP",
+  "version": "3.2.1",
+  "description": "Autonomous Solana meme-coin sniper bot with 48 MCP tools for AI control. Round-robin RPC pool, multi-source launch detection, buy, sell, configure, query P&L, Pulse trends, and wallet state. REQUIRES the Solana Sniper Bot Windows application.",
+  "long_description": "## Solana Sniper Bot MCP\n\nAutonomous Solana meme-coin sniper bot with 48 MCP tools for AI control. Round-robin RPC pool with up to 5 Helius keys, multi-source launch detection, buy, sell, configure, query P&L, Pulse trends, and wallet state from Claude, Cursor, Devin, or any MCP-compatible AI assistant.\n\n### IMPORTANT: Requires the Solana Sniper Bot Windows Application\n\nThis MCP server is **useless on its own**. It requires the **Solana Sniper Bot** Windows GUI application to be installed and running.\n\n**Download the Windows executable from the [landing page](https://solsniperbot.co/).**\n\n### What It Does\n\nThe Solana Sniper Bot watches the Solana blockchain for new token launches (especially Pump.fun), applies configurable safety and market filters, executes buys and sells through Pump.fun bonding curves or Jupiter, and manages open positions with take-profit ladders, trailing stops, and rug detection.\n\nUsing the MCP server tools, your agentic AI can analyze how market conditions change over time. With more than 45 tools exposed to your agent, it can continuously fine-tune bot settings and help zero in on a strategy aligned with your risk factors and preferred level of aggressiveness.\n\n### Tools (48)\n\n**Bot Control:** start_bot, stop_bot, sell_all, sell_position, buy_mint, get_bot_stats\n\n**RPC Pool:** get_rpc_pool_status, set_rpc_pool_key, set_rpc_pool_skip_until\n\n**Configuration:** get_config, update_config, update_config_batch, get_config_catalog, validate_current_config, preview_strategy_profile, apply_strategy_profile, save_settings\n\n**Positions:** get_open_positions, get_positions_status, get_graduation_status, audit_open_positions, get_position_exit_quote, close_position, get_bot_status\n\n**Trade History & P&L:** get_trade_history, analyze_trade_performance, clear_trade_history, get_pnl_tally, reset_pnl_tally, refresh_pnl, get_fee_summary\n\n**Wallet:** get_wallet_balances, transfer_sol, move_all_sol\n\n**Pulse Trends:** get_pulse_results, set_pulse_match_mode, clear_pulse_results, get_pulse_price_history, get_pulse_purchase_preview, buy_pulse_asset\n\n**Trading Mode:** set_trading_mode\n\n**Log & Commands:** get_log, clear_log, get_pending_commands, clear_commands\n\n**ATA Rent:** close_empty_token_accounts\n\n### Installation\n\n```bash\npip install solana-snipe-bot-mcp\n```\n\n### Client Configuration\n\n```json\n{\n  \"mcpServers\": {\n    \"solana-snipe-bot\": {\n      \"command\": \"python\",\n      \"args\": [\"-m\", \"solana_snipe_bot_mcp\"],\n      \"env\": {\n        \"SOLANA_SNIPER_BOT_DIR\": \"/path/to/snipe-bot\"\n      }\n    }\n  }\n}\n```\n\n### Links\n\n- MCP Source Repo: https://github.com/solara-sniper-bot/MCP\n- Download App: https://solsniperbot.co/\n- Buy License ($99.99): https://buy.stripe.com/3cI7sLc2l3Et1RU4IE7bW06\n- PyPI: https://pypi.org/project/solana-snipe-bot-mcp/\n- MCP Registry: io.github.solara-sniper-bot/MCP\n\n### License\n\nProprietary. All rights reserved. The Solana Sniper Bot Windows application includes a full-week (168 hours) free trial and a lifetime license for $99.99.",
+  "author": {
+    "name": "Solana Sniper Bot",
+    "email": "admin@solsniperbot.co",
+    "url": "https://github.com/solara-sniper-bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solara-sniper-bot/MCP.git"
+  },
+  "homepage": "https://solsniperbot.co/",
+  "documentation": "https://github.com/solara-sniper-bot/MCP#readme",
+  "support": "https://github.com/solara-sniper-bot/MCP/issues",
+  "license": "Proprietary",
+  "keywords": ["solana", "sniper", "trading", "mcp", "pumpfun", "ai-agent", "blockchain", "crypto", "jupiter"],
+  "tools_generated": true,
+  "server": {
+    "type": "python",
+    "entry_point": "solana_snipe_bot_mcp/server.py",
+    "mcp_config": {
+      "command": "python",
+      "args": ["-m", "solana_snipe_bot_mcp"],
+      "env": {
+        "SOLANA_SNIPER_BOT_DIR": "${user_config.project_dir}"
+      }
+    }
+  },
+  "user_config": {
+    "project_dir": {
+      "type": "string",
+      "title": "Project Directory",
+      "description": "Absolute path to your Solana Sniper Bot project directory",
+      "required": true
+    }
+  },
+  "compatibility": {
+    "platforms": ["win32", "darwin", "linux"],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  }
+}

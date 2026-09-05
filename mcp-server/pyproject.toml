@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solana-snipe-bot-mcp"
+version = "3.2.1"
+description = "Solana Sniper Bot MCP Server — control an autonomous Solana meme-coin sniper bot via 48 MCP tools."
+readme = "README.md"
+license = {text = "Proprietary"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Solana Sniper Bot", email = "admin@solsniperbot.co"},
+]
+keywords = ["solana", "sniper", "mcp", "model-context-protocol", "trading", "bot", "pumpfun", "meme-coin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp>=1.0.0,<3.0.0",
+]
+
+[project.urls]
+Homepage = "https://solana-snipe-bot-landing.pages.dev/"
+Repository = "https://github.com/solara-sniper-bot/MCP"
+Issues = "https://github.com/solara-sniper-bot/MCP/issues"
+
+[project.scripts]
+solana-snipe-bot-mcp = "solana_snipe_bot_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["solana_snipe_bot_mcp*"]

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "solana-sniper-bot": {
+      "name": "Solana Sniper Bot",
+      "description": "Control and tune an autonomous Solana meme-coin sniper bot via 32+ MCP tools.",
+      "command": "python",
+      "args": [
+        "P:\\snipe-bot\\mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
