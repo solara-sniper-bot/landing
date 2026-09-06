@@ -628,6 +628,14 @@
 
 <!-- ==================== AUTO-DOWNLOAD SCRIPT ==================== -->
 <script>
+    // Track the download event with GA4
+    if (typeof gtag === 'function') {
+        gtag('event', 'file_download', {
+            event_category: 'engagement',
+            event_label: 'SolanaSniperBot.zip',
+            transport_type: 'beacon'
+        });
+    }
     // Auto-start download after 1.5 seconds
     setTimeout(function() {
         window.location.href = 'https://solsniperbot.co/SolanaSniperBot.zip';
