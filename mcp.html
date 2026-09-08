@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solana Sniper Bot MCP — 281 AI Tools for Solana Trading | Claude, Cursor, Devin</title>
-    <meta name="description" content="281 MCP tools that let AI assistants (Claude, Cursor, Devin) control the Solana Sniper Bot V4 across four trading modes: Meme sniping, Spot trading, Perpetual futures, and Mirror copy-trading. Requires the Windows app.">
+    <title>Solana Sniper Bot MCP — 328 AI Tools for Solana Trading | Claude, Cursor, Devin</title>
+    <meta name="description" content="328 MCP tools that let AI assistants (Claude, Cursor, Devin) control the Solana Sniper Bot V4 across four trading modes: Meme sniping, Spot trading, Perpetual futures, and Mirror copy-trading. Requires the Windows app.">
     <meta name="keywords" content="MCP server, AI crypto trading, solana sniper bot MCP, Claude crypto trading, Cursor trading bot, Devin trading, Model Context Protocol, AI trading tools">
-    <meta property="og:title" content="Solana Sniper Bot MCP — 281 AI Tools for Solana Trading">
-    <meta property="og:description" content="Control a Solana trading bot with 281 MCP tools. Works with Claude, Cursor, Devin. Meme, Spot, Perps, Mirror Mode.">
+    <meta property="og:title" content="Solana Sniper Bot MCP — 328 AI Tools for Solana Trading">
+    <meta property="og:description" content="Control a Solana trading bot with 328 MCP tools. Works with Claude, Cursor, Devin. Meme, Spot, Perps, Mirror Mode.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solsniperbot.co/mcp/">
     <meta property="og:image" content="https://solsniperbot.co/mcp/mcp-software-box.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Solana Sniper Bot MCP — 281 AI Tools">
-    <meta name="twitter:description" content="Control a Solana trading bot with 281 MCP tools. Works with Claude, Cursor, Devin.">
+    <meta name="twitter:title" content="Solana Sniper Bot MCP — 328 AI Tools">
+    <meta name="twitter:description" content="Control a Solana trading bot with 328 MCP tools. Works with Claude, Cursor, Devin.">
     <link rel="canonical" href="https://solsniperbot.co/mcp/">
     <script type="application/ld+json">
     {
@@ -22,9 +22,9 @@
       "name": "Solana Sniper Bot MCP",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Cross-platform",
-      "description": "MCP server with 281 tools for AI-controllable Solana trading across four modes. Requires the Solana Sniper Bot Windows application.",
+      "description": "MCP server with 328 tools for AI-controllable Solana trading across four modes. Requires the Solana Sniper Bot Windows application.",
       "softwareVersion": "4.0.4",
-      "featureList": "281 MCP tools across four trading modes, Claude/Cursor/Devin compatible, bot control, configuration, P&L tracking, wallet management, spot and perp trading, mirror copy-trading"
+      "featureList": "328 MCP tools across four trading modes, Claude/Cursor/Devin compatible, bot control, configuration, P&L tracking, wallet management, spot and perp trading, mirror copy-trading"
     }
     </script>
     <style>
@@ -640,7 +640,7 @@
         <div class="hero-text">
             <span class="hero-badge">Model Context Protocol &middot; Solana Trading</span>
             <h1>Control Your Solana Bot<br>with <span class="accent">AI</span></h1>
-            <p class="tagline">281 MCP tools that let Claude, Cursor, and Devin control every aspect of your Solana Sniper Bot V4 through natural language.</p>
+            <p class="tagline">328 MCP tools that let Claude, Cursor, and Devin control every aspect of your Solana Sniper Bot V4 through natural language.</p>
             <div class="compat-badges">
                 <span>Claude</span>
                 <span>Cursor</span>
@@ -660,7 +660,7 @@
 <!-- ==================== STAT BAR ==================== -->
 <div class="stat-bar">
     <div class="stat-item">
-        <div class="stat-num">281</div>
+        <div class="stat-num">328</div>
         <div class="stat-label">MCP Tools</div>
     </div>
     <div class="stat-item">
@@ -772,7 +772,7 @@ python -m solana_snipe_bot_mcp</div>
         <ul style="color:#c0c0d0;font-size:14px;margin-bottom:20px;padding-left:20px;line-height:1.7;">
             <li>Reads <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">config.json</code> and all bot state files from <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">SOLANA_SNIPER_BOT_DIR</code></li>
             <li>Writes commands to <code style="background:#0a0a0f;padding:2px 6px;border-radius:4px;color:#fbbf24;font-family:Consolas,monospace;">command_queue.json</code> for the running bot to poll</li>
-            <li>Exposes 281 tools grouped by function across Meme, Spot, Perpetual, and Mirror trading modes</li>
+            <li>Exposes 328 tools grouped by function across Meme, Spot, Perpetual, and Mirror trading modes</li>
             <li>Returns JSON summaries for config, positions, P&amp;L, Pulse, wallet, fees, and log</li>
         </ul>
 
@@ -790,529 +790,668 @@ python -m solana_snipe_bot_mcp</div>
 
 <!-- ==================== TOOLS ==================== -->
 <section class="section" style="padding-top: 0;">
-    <h2>281 Tools at Your AI's Disposal</h2>
+    <h2>328 Tools at Your AI's Disposal</h2>
     <p class="subtitle">Grouped by category. Your AI can call any of these through natural language.</p>
     <div class="tools-grid">
 
       <div class="tool-category">
-        <h3>Bot Control <span class="count">(6)</span></h3>
+        <h3>Orderly Connection Setup <span class="count">(7)</span></h3>
         <ul>
-                <li>start_bot</li>
-                <li>stop_bot</li>
-                <li>sell_all</li>
-                <li>sell_position</li>
-                <li>buy_mint</li>
-                <li>get_bot_stats</li>
+                <li title="Check locally saved Orderly credentials without revealing the private key.">get_orderly_setup_status</li>
+                <li title="Generate and privately save an ED25519 pair; return only its public key.">generate_orderly_key_pair</li>
+                <li title="Look up the user's Solana Raydium Orderly account; optionally save its ID.">lookup_orderly_account</li>
+                <li title="Ask the running app to open wallet authorization; the user approves the signature.">authorize_orderly_key</li>
+                <li title="Save and test the Orderly connection with current credentials.">test_orderly_connection</li>
+                <li title="Copy the AI setup prompt for obtaining Orderly credentials via MCP.">copy_ai_setup_prompt</li>
+                <li title="Fetch the Orderly receiver/deposit address for the configured perp wallet.">get_orderly_deposit_address</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>RPC Pool <span class="count">(3)</span></h3>
+        <h3>Bot Control <span class="count">(10)</span></h3>
         <ul>
-                <li>get_rpc_pool_status</li>
-                <li>set_rpc_pool_key</li>
-                <li>set_rpc_pool_skip_until</li>
-            </ul>
-        </div>
-
-      <div class="tool-category">
-        <h3>Configuration <span class="count">(8)</span></h3>
-        <ul>
-                <li>get_config</li>
-                <li>update_config</li>
-                <li>update_config_batch</li>
-                <li>get_config_catalog</li>
-                <li>validate_current_config</li>
-                <li>preview_strategy_profile</li>
-                <li>apply_strategy_profile</li>
-                <li>save_settings</li>
-            </ul>
-        </div>
-
-      <div class="tool-category">
-        <h3>Positions <span class="count">(8)</span></h3>
-        <ul>
-                <li>get_open_positions</li>
-                <li>get_positions_status</li>
-                <li>get_graduation_status</li>
-                <li>audit_open_positions</li>
-                <li>get_position_exit_quote</li>
-                <li>close_position</li>
-                <li>get_bot_status</li>
-                <li>get_pending_commands</li>
-            </ul>
-        </div>
-
-      <div class="tool-category">
-        <h3>Trade History & P&L <span class="count">(8)</span></h3>
-        <ul>
-                <li>get_trade_history</li>
-                <li>analyze_trade_performance</li>
-                <li>clear_trade_history</li>
-                <li>get_pnl_tally</li>
-                <li>reset_pnl_tally</li>
-                <li>refresh_pnl</li>
-                <li>get_fee_summary</li>
-                <li>clear_commands</li>
-            </ul>
-        </div>
-
-      <div class="tool-category">
-        <h3>Wallet <span class="count">(3)</span></h3>
-        <ul>
-                <li>get_wallet_balances</li>
-                <li>transfer_sol</li>
-                <li>move_all_sol</li>
-            </ul>
-        </div>
-
-      <div class="tool-category">
-        <h3>Pulse Trends <span class="count">(6)</span></h3>
-        <ul>
-                <li>get_pulse_results</li>
-                <li>set_pulse_match_mode</li>
-                <li>clear_pulse_results</li>
-                <li>get_pulse_price_history</li>
-                <li>get_pulse_purchase_preview</li>
-                <li>buy_pulse_asset</li>
+                <li title="Start the snipe bot (equivalent to clicking 'Start Bot' in the GUI).">start_bot</li>
+                <li title="Stop the snipe bot (equivalent to clicking 'Stop Bot' in the GUI).">stop_bot</li>
+                <li title="Panic sell — liquidate ALL open positions immediately.">sell_all</li>
+                <li title="Sell a single position by mint address immediately.">sell_position</li>
+                <li title="Buy a specific token by mint address using configured automatic sizing.">buy_mint</li>
+                <li title="Get bot operational statistics and per-category rejection totals.">get_bot_stats</li>
+                <li title="Get overall bot status.">get_bot_status</li>
+                <li title="Get pending commands from the command queue.">get_pending_commands</li>
+                <li title="Clear the command queue.">clear_commands</li>
+                <li title="Manually close a position without executing an on-chain sell.">close_position</li>
             </ul>
         </div>
 
       <div class="tool-category">
         <h3>Trading Mode <span class="count">(1)</span></h3>
         <ul>
-                <li>set_trading_mode</li>
+                <li title="Switch between practice and live trading, matching the GUI mode button.">set_trading_mode</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Log & Commands <span class="count">(2)</span></h3>
+        <h3>RPC Pool <span class="count">(5)</span></h3>
         <ul>
-                <li>get_log</li>
-                <li>clear_log</li>
+                <li title="List configured RPC pool slots without exposing API key values.">get_rpc_pool_status</li>
+                <li title="Set one Helius RPC pool key in the private local secrets.env file.">set_rpc_pool_key</li>
+                <li title="Set or clear the skip-until date for an RPC pool slot.">set_rpc_pool_skip_until</li>
+                <li title="Get the full RPC pool configuration (slots, keys masked, skip dates).">get_rpc_pool_config</li>
+                <li title="Clear (remove) the API key from an RPC pool slot.">clear_rpc_pool_slot</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Configuration <span class="count">(8)</span></h3>
+        <ul>
+                <li title="Get the current bot configuration as JSON.">get_config</li>
+                <li title="Update a single config key. The bot must be restarted for some settings.">update_config</li>
+                <li title="Validate and atomically update multiple settings from a JSON object.">update_config_batch</li>
+                <li title="List every supported variable, type, range, description, and value.">get_config_catalog</li>
+                <li title="Validate all current settings and return errors and risk warnings.">validate_current_config</li>
+                <li title="Preview the guarded small-account profile without changing files.">preview_strategy_profile</li>
+                <li title="Apply the guarded profile atomically; requires confirm=true.">apply_strategy_profile</li>
+                <li title="Save current settings to config.json.">save_settings</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Positions <span class="count">(5)</span></h3>
+        <ul>
+                <li title="Get all currently open (unsold) positions as JSON.">get_open_positions</li>
+                <li title="Get universal real-time position status for Meme, Perp, and Spot.">get_positions_status</li>
+                <li title="Check graduation status for all open positions or a specific mint.">get_graduation_status</li>
+                <li title="Compare saved positions to wallet balances and live exit routes (read-only).">audit_open_positions</li>
+                <li title="Get a read-only Jupiter exit quote for a persisted open position.">get_position_exit_quote</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Trade History & P&L <span class="count">(7)</span></h3>
+        <ul>
+                <li title="Get recent trade history records.">get_trade_history</li>
+                <li title="Analyze closed-trade performance and exit-reason distribution.">analyze_trade_performance</li>
+                <li title="Clear all trade history.">clear_trade_history</li>
+                <li title="Get the persistent all-time P&L tally.">get_pnl_tally</li>
+                <li title="Reset the all-time P&L tally to zero.">reset_pnl_tally</li>
+                <li title="Force a P&L recompute.">refresh_pnl</li>
+                <li title="Get fee + ATA rent breakdown.">get_fee_summary</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Wallet & Transfers <span class="count">(6)</span></h3>
+        <ul>
+                <li title="Get Funding, Meme, Savings, Perpetuals, and Spot wallet balances.">get_wallet_balances</li>
+                <li title="Transfer SOL over any directed route among the five application wallets.">transfer_sol</li>
+                <li title="Move all transferable SOL over any route among the five application wallets.">move_all_sol</li>
+                <li title="Get all application wallet addresses (funding, meme, savings, perpetuals, spot).">get_wallet_addresses</li>
+                <li title="Get the Perpetuals wallet address.">get_perp_wallet_address</li>
+                <li title="Get the Spot wallet address.">get_spot_wallet_address</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Pulse Trends <span class="count">(6)</span></h3>
+        <ul>
+                <li title="Get all Pulse tab results.">get_pulse_results</li>
+                <li title="Set the Pulse match mode.">set_pulse_match_mode</li>
+                <li title="Clear all Pulse results.">clear_pulse_results</li>
+                <li title="Get price tracking for a specific mint.">get_pulse_price_history</li>
+                <li title="Return the Pulse asset data and SOL/USD funds available for a purchase.">get_pulse_purchase_preview</li>
+                <li title="Purchase a Pulse asset by SOL quantity, USD value, or available-funds percentage.">buy_pulse_asset</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Log & Commands <span class="count">(4)</span></h3>
+        <ul>
+                <li title="Get the last N lines of the bot log.">get_log</li>
+                <li title="Clear the bot log file.">clear_log</li>
+                <li title="Copy the current bot log to the system clipboard.">copy_log</li>
+                <li title="Save the current bot log to a file. If path is empty, saves to the project directory.">save_log</li>
             </ul>
         </div>
 
       <div class="tool-category">
         <h3>ATA Rent <span class="count">(1)</span></h3>
         <ul>
-                <li>close_empty_token_accounts</li>
+                <li title="Close all empty token accounts to reclaim ATA rent.">close_empty_token_accounts</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Safety & Filters <span class="count">(12)</span></h3>
+        <h3>Meme Bot — Safety & Filters <span class="count">(17)</span></h3>
         <ul>
-                <li>set_meme_max_buy_amount</li>
-                <li>set_meme_min_buy_amount</li>
-                <li>set_meme_min_liquidity</li>
-                <li>set_meme_min_market_cap</li>
-                <li>set_meme_min_volume_24h</li>
-                <li>set_meme_min_holders</li>
-                <li>set_meme_max_token_age</li>
-                <li>set_meme_max_creator_holdings_pct</li>
-                <li>set_meme_max_positions</li>
-                <li>set_meme_position_size_pct</li>
-                <li>set_meme_slippage_bps</li>
-                <li>add_to_blacklist</li>
+                <li title="Set the maximum buy amount in USD for meme trades.">set_meme_max_buy_amount</li>
+                <li title="Set the minimum buy amount in USD for meme trades.">set_meme_min_buy_amount</li>
+                <li title="Set the minimum liquidity (USD) required for a meme token to be considered.">set_meme_min_liquidity</li>
+                <li title="Set the minimum market cap (USD) for a meme token to be considered.">set_meme_min_market_cap</li>
+                <li title="Set the minimum 24h volume (USD) for a meme token to be considered.">set_meme_min_volume_24h</li>
+                <li title="Set the minimum number of token holders required for a meme token.">set_meme_min_holders</li>
+                <li title="Set the maximum token age (minutes) for meme sniping (only buy new tokens).">set_meme_max_token_age</li>
+                <li title="Set the max percentage of supply the creator/minter can hold (rug pull protection).">set_meme_max_creator_holdings_pct</li>
+                <li title="Set the maximum number of simultaneous meme positions.">set_meme_max_positions</li>
+                <li title="Set the percentage of wallet to use per meme trade.">set_meme_position_size_pct</li>
+                <li title="Set the maximum slippage in basis points for meme swaps.">set_meme_slippage_bps</li>
+                <li title="Add a token mint to the blacklist (never buy this token).">add_to_blacklist</li>
+                <li title="Remove a token mint from the blacklist.">remove_from_blacklist</li>
+                <li title="Return the current blacklist of token mints.">get_blacklist</li>
+                <li title="Add a token mint to the whitelist (only buy these tokens).">add_to_whitelist</li>
+                <li title="Remove a token mint from the whitelist.">remove_from_whitelist</li>
+                <li title="Return the current whitelist of token mints.">get_whitelist</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Exit Strategy <span class="count">(11)</span></h3>
+        <h3>Meme Bot — Exit Strategy <span class="count">(10)</span></h3>
         <ul>
-                <li>set_meme_stop_loss_pct</li>
-                <li>set_meme_take_profit_pct</li>
-                <li>set_meme_tp_ladder_steps</li>
-                <li>set_meme_trailing_stop</li>
-                <li>set_meme_rug_detection</li>
-                <li>set_meme_volume_death_detection</li>
-                <li>set_meme_momentum_reversal</li>
-                <li>set_meme_position_timeout</li>
-                <li>enable_meme_stop_loss</li>
-                <li>enable_meme_take_profit_ladder</li>
-                <li>enable_meme_trailing_stop</li>
+                <li title="Set the hard stop loss percentage for meme positions.">set_meme_stop_loss_pct</li>
+                <li title="Set the take profit percentage for meme positions.">set_meme_take_profit_pct</li>
+                <li title="Set the take-profit ladder steps (format: gain%:close_pct,gain%:close_pct).">set_meme_tp_ladder_steps</li>
+                <li title="Set the trailing stop percentage for meme positions.">set_meme_trailing_stop</li>
+                <li title="Enable or disable rug detection for meme positions.">set_meme_rug_detection</li>
+                <li title="Enable or disable volume death detection (exit when volume dies).">set_meme_volume_death_detection</li>
+                <li title="Enable or disable momentum reversal exit for meme positions.">set_meme_momentum_reversal</li>
+                <li title="Enable or disable stop loss protection for meme positions.">enable_meme_stop_loss</li>
+                <li title="Enable or disable take-profit ladder for meme positions.">enable_meme_take_profit_ladder</li>
+                <li title="Enable or disable trailing stop for meme positions.">enable_meme_trailing_stop</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Signals & Auto-Buy <span class="count">(3)</span></h3>
+        <h3>Meme Bot — Signals & Auto-Buy <span class="count">(3)</span></h3>
         <ul>
-                <li>enable_meme_auto_buy</li>
-                <li>enable_meme_signals</li>
-                <li>clear_meme_signals</li>
+                <li title="Enable or disable automatic buying when signals are detected.">enable_meme_auto_buy</li>
+                <li title="Enable or disable automatic signal-based buying for the meme bot.">enable_meme_signals</li>
+                <li title="Clear all stored Pulse signal results.">clear_meme_signals</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Savings & Alerts <span class="count">(4)</span></h3>
+        <h3>Meme Bot — Savings & Alerts <span class="count">(3)</span></h3>
         <ul>
-                <li>set_meme_auto_savings</li>
-                <li>set_meme_savings_threshold</li>
-                <li>set_meme_alert_threshold</li>
-                <li>set_meme_exposure</li>
+                <li title="Enable or disable auto savings sweep for meme bot profits.">set_meme_auto_savings</li>
+                <li title="Set the savings sweep threshold (USD) for the meme bot.">set_meme_savings_threshold</li>
+                <li title="Set the minimum Pulse buy-signal score to trigger an alert.">set_meme_alert_threshold</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Analytics <span class="count">(15)</span></h3>
+        <h3>Meme Bot — Analytics <span class="count">(16)</span></h3>
         <ul>
-                <li>get_meme_statistics</li>
-                <li>get_meme_win_rate</li>
-                <li>get_meme_total_pnl</li>
-                <li>get_meme_best_worst_trades</li>
-                <li>get_meme_portfolio_concentration</li>
-                <li>get_meme_market_stats</li>
-                <li>get_meme_pulse_summary</li>
-                <li>get_meme_risk_status</li>
-                <li>get_meme_signal_detail</li>
-                <li>get_meme_position_detail</li>
-                <li>get_meme_position_pnl</li>
-                <li>get_meme_position_timeout</li>
-                <li>get_meme_trade_detail</li>
-                <li>get_meme_pending_graduations</li>
-                <li>get_meme_graduated_tokens</li>
+                <li title="Return comprehensive meme trading statistics.">get_meme_statistics</li>
+                <li title="Return the win rate for meme bot trading.">get_meme_win_rate</li>
+                <li title="Return total realized and unrealized P&L for meme trading.">get_meme_total_pnl</li>
+                <li title="Return the best and worst meme trades.">get_meme_best_worst_trades</li>
+                <li title="Return portfolio concentration analysis for meme positions.">get_meme_portfolio_concentration</li>
+                <li title="Return aggregate statistics across all discovered meme tokens.">get_meme_market_stats</li>
+                <li title="Return a summary of recent Pulse discovery results including top opportunities.">get_meme_pulse_summary</li>
+                <li title="Return current risk metrics for meme bot trading.">get_meme_risk_status</li>
+                <li title="Return details for a specific Pulse signal by index (most recent first).">get_meme_signal_detail</li>
+                <li title="Return details for a specific meme position by token mint.">get_meme_position_detail</li>
+                <li title="Return P&L for a specific meme position.">get_meme_position_pnl</li>
+                <li title="Set the auto-close timeout for meme positions (0 = disabled).">get_meme_position_timeout</li>
+                <li title="Return details for a specific meme trade by index (most recent first).">get_meme_trade_detail</li>
+                <li title="Return tokens that are pending graduation from Pump.fun.">get_meme_pending_graduations</li>
+                <li title="Return tokens that have graduated from Pump.fun to Raydium.">get_meme_graduated_tokens</li>
+                <li title="Return total exposure across all open meme positions.">get_meme_exposure</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Tokens <span class="count">(8)</span></h3>
+        <h3>Meme Bot — Tokens <span class="count">(3)</span></h3>
         <ul>
-                <li>get_trending_meme_tokens</li>
-                <li>search_meme_tokens</li>
-                <li>get_meme_alerts</li>
-                <li>add_to_whitelist</li>
-                <li>remove_from_whitelist</li>
-                <li>remove_from_blacklist</li>
-                <li>get_blacklist</li>
-                <li>get_whitelist</li>
+                <li title="Get trending/new tokens from Pump.fun and other launch sources.">get_trending_meme_tokens</li>
+                <li title="Search for meme tokens by name, symbol, or mint address in Pulse results.">search_meme_tokens</li>
+                <li title="Return recent high-quality meme trading alerts from Pulse results.">get_meme_alerts</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Meme Risk Levels <span class="count">(2)</span></h3>
+        <h3>Meme Bot — Risk Levels <span class="count">(2)</span></h3>
         <ul>
-                <li>apply_risk_level</li>
-                <li>preview_risk_level</li>
+                <li title="Atomically apply a 1-20 unified risk level; requires confirm=true.">apply_risk_level</li>
+                <li title="Preview one of the 20 unified risk levels without changing files.">preview_risk_level</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Orders <span class="count">(5)</span></h3>
+        <h3>Meme Bot — Markets <span class="count">(1)</span></h3>
         <ul>
-                <li>spot_market_buy</li>
-                <li>spot_market_sell</li>
-                <li>spot_limit_buy</li>
-                <li>cancel_spot_order</li>
-                <li>close_spot_position</li>
+                <li title="Refresh the Meme bot markets table.">refresh_meme_markets</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Configuration <span class="count">(6)</span></h3>
+        <h3>Spot Trading — Bot Control <span class="count">(6)</span></h3>
         <ul>
-                <li>get_spot_config</li>
-                <li>update_spot_config</li>
-                <li>batch_update_spot_config</li>
-                <li>get_spot_config_field</li>
-                <li>validate_spot_config_values</li>
-                <li>get_spot_config_catalog</li>
+                <li title="Start the spot trading bot.">start_spot_bot</li>
+                <li title="Stop the spot trading bot.">stop_spot_bot</li>
+                <li title="Panic close all open spot positions immediately.">sell_all_spot</li>
+                <li title="Return the current spot bot status (running, stopped, etc.).">get_spot_bot_status</li>
+                <li title="Return recent spot bot log lines.">get_spot_logs</li>
+                <li title="Clear the spot bot log file.">clear_spot_logs</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Risk & DCA <span class="count">(10)</span></h3>
+        <h3>Spot Trading — Orders <span class="count">(6)</span></h3>
         <ul>
-                <li>set_spot_risk_level</li>
-                <li>set_spot_max_exposure</li>
-                <li>set_spot_max_positions</li>
-                <li>set_spot_slippage</li>
-                <li>set_spot_dca_interval</li>
-                <li>set_spot_dca_steps</li>
-                <li>enable_spot_dca</li>
-                <li>enable_spot_rebalancing</li>
-                <li>set_spot_rebalance_threshold</li>
-                <li>set_spot_alert_threshold</li>
+                <li title="Execute a manual market buy order for a token.">spot_market_buy</li>
+                <li title="Execute a manual market sell order for a token (sell all holdings).">spot_market_sell</li>
+                <li title="Place a limit buy order for a token (queued for engine execution).">spot_limit_buy</li>
+                <li title="Cancel a pending spot order for a token.">cancel_spot_order</li>
+                <li title="Close a specific spot position by token mint.">close_spot_position</li>
+                <li title="Return any pending spot orders.">get_spot_open_orders</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Positions & P&L <span class="count">(13)</span></h3>
+        <h3>Spot Trading — Configuration <span class="count">(6)</span></h3>
         <ul>
-                <li>get_spot_positions</li>
-                <li>get_spot_position_detail</li>
-                <li>get_spot_position_pnl</li>
-                <li>get_spot_trade_history</li>
-                <li>get_spot_trade_detail</li>
-                <li>get_spot_statistics</li>
-                <li>get_spot_win_rate</li>
-                <li>get_spot_total_pnl</li>
-                <li>get_spot_best_worst_trades</li>
-                <li>get_spot_portfolio_concentration</li>
-                <li>get_spot_trade_pnl_tally</li>
-                <li>reset_spot_pnl_tally</li>
-                <li>clear_spot_trade_history</li>
+                <li title="Return the full spot trading configuration.">get_spot_config</li>
+                <li title="Update a single spot configuration field.">update_spot_config</li>
+                <li title="Update multiple spot configuration fields at once.">batch_update_spot_config</li>
+                <li title="Get the current value and metadata for a single config field.">get_spot_config_field</li>
+                <li title="Validate the current spot configuration and return warnings.">validate_spot_config_values</li>
+                <li title="Return the catalog of all available spot config fields with metadata.">get_spot_config_catalog</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Markets & Data <span class="count">(8)</span></h3>
+        <h3>Spot Trading — Risk & DCA <span class="count">(10)</span></h3>
         <ul>
-                <li>get_spot_markets</li>
-                <li>get_spot_market_detail</li>
-                <li>get_spot_market_stats</li>
-                <li>search_spot_tokens</li>
-                <li>get_trending_spot_tokens</li>
-                <li>get_spot_quote</li>
-                <li>get_spot_swap_transaction</li>
-                <li>refresh_spot_markets</li>
+                <li title="Set the spot risk level (1-20) and apply the coordinated profile.">set_spot_risk_level</li>
+                <li title="Set the maximum total exposure for spot trading.">set_spot_max_exposure</li>
+                <li title="Set the maximum number of simultaneous spot positions.">set_spot_max_positions</li>
+                <li title="Set the maximum slippage in basis points for spot swaps.">set_spot_slippage</li>
+                <li title="Set the DCA interval in seconds.">set_spot_dca_interval</li>
+                <li title="Set the maximum number of DCA steps per position.">set_spot_dca_steps</li>
+                <li title="Enable or disable DCA (Dollar Cost Averaging) for spot positions.">enable_spot_dca</li>
+                <li title="Enable or disable portfolio rebalancing.">enable_spot_rebalancing</li>
+                <li title="Set the rebalancing threshold percentage.">set_spot_rebalance_threshold</li>
+                <li title="Set the minimum signal score to trigger an alert.">set_spot_alert_threshold</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Signals & Bot <span class="count">(11)</span></h3>
+        <h3>Spot Trading — Positions & P&L <span class="count">(14)</span></h3>
         <ul>
-                <li>get_spot_signals</li>
-                <li>get_spot_signal_detail</li>
-                <li>clear_spot_signals</li>
-                <li>enable_spot_signals</li>
-                <li>get_spot_risk_status</li>
-                <li>get_spot_risk_levels</li>
-                <li>get_spot_alerts</li>
-                <li>start_spot_bot</li>
-                <li>stop_spot_bot</li>
-                <li>sell_all_spot</li>
-                <li>get_spot_bot_status</li>
+                <li title="Return all open spot positions.">get_spot_positions</li>
+                <li title="Return details for a specific spot position by token mint.">get_spot_position_detail</li>
+                <li title="Return P&L for a specific spot position.">get_spot_position_pnl</li>
+                <li title="Return total exposure across all open spot positions.">get_spot_exposure</li>
+                <li title="Return recent spot trade history.">get_spot_trade_history</li>
+                <li title="Return details for a specific trade by index.">get_spot_trade_detail</li>
+                <li title="Return comprehensive spot trading statistics.">get_spot_statistics</li>
+                <li title="Return the win rate for spot trading.">get_spot_win_rate</li>
+                <li title="Return total realized and unrealized P&L for spot trading.">get_spot_total_pnl</li>
+                <li title="Return the best and worst spot trades.">get_spot_best_worst_trades</li>
+                <li title="Return portfolio concentration analysis for spot positions.">get_spot_portfolio_concentration</li>
+                <li title="Return the aggregate P&L tally for spot trading.">get_spot_trade_pnl_tally</li>
+                <li title="Reset the spot P&L tally to zero.">reset_spot_pnl_tally</li>
+                <li title="Clear all spot trade history.">clear_spot_trade_history</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Spot Wallet & Logs <span class="count">(8)</span></h3>
+        <h3>Spot Trading — Markets & Quotes <span class="count">(8)</span></h3>
         <ul>
-                <li>get_spot_wallet_balances</li>
-                <li>get_spot_token_balance</li>
-                <li>transfer_spot_to_savings</li>
-                <li>add_allowed_spot_token</li>
-                <li>remove_allowed_spot_token</li>
-                <li>get_spot_bot_status</li>
-                <li>get_spot_logs</li>
-                <li>clear_spot_logs</li>
+                <li title="Return the list of monitored spot markets with current data.">get_spot_markets</li>
+                <li title="Return detailed market data for a specific token mint.">get_spot_market_detail</li>
+                <li title="Return aggregate statistics across all monitored spot markets.">get_spot_market_stats</li>
+                <li title="Search for tokens by name, symbol, or mint address via Jupiter.">search_spot_tokens</li>
+                <li title="Get trending/popular tokens from Jupiter.">get_trending_spot_tokens</li>
+                <li title="Get a swap quote from Jupiter DEX.">get_spot_quote</li>
+                <li title="Get a serialized swap transaction from Jupiter.">get_spot_swap_transaction</li>
+                <li title="Trigger a market data refresh from Jupiter.">refresh_spot_markets</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Positions <span class="count">(7)</span></h3>
+        <h3>Spot Trading — Signals <span class="count">(7)</span></h3>
         <ul>
-                <li>open_perp_long</li>
-                <li>open_perp_short</li>
-                <li>close_perp_position</li>
-                <li>sell_all_perps</li>
-                <li>get_perp_positions</li>
-                <li>get_perp_position_detail</li>
-                <li>get_perp_position_pnl</li>
+                <li title="Return recent spot trading signals.">get_spot_signals</li>
+                <li title="Return details for a specific signal by index (from most recent).">get_spot_signal_detail</li>
+                <li title="Clear all stored spot signals.">clear_spot_signals</li>
+                <li title="Enable or disable automatic signal generation.">enable_spot_signals</li>
+                <li title="Return current risk metrics for spot trading.">get_spot_risk_status</li>
+                <li title="Return all 20 spot risk levels with their names.">get_spot_risk_levels</li>
+                <li title="Return recent spot trading alerts.">get_spot_alerts</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Configuration <span class="count">(8)</span></h3>
+        <h3>Spot Trading — Wallet & Tokens <span class="count">(6)</span></h3>
         <ul>
-                <li>get_perp_config</li>
-                <li>update_perp_config</li>
-                <li>update_perp_config_batch</li>
-                <li>get_perp_config_catalog</li>
-                <li>save_perp_settings</li>
-                <li>validate_perp_config_tool</li>
-                <li>set_perp_auto_execute</li>
-                <li>set_perp_dry_run</li>
+                <li title="Return spot wallet balances (USDC, SOL, and token holdings).">get_spot_wallet_balances</li>
+                <li title="Get a specific token balance for a wallet.">get_spot_token_balance</li>
+                <li title="Transfer funds from spot trading wallet to savings wallet.">transfer_spot_to_savings</li>
+                <li title="Add a token to the allowed list for spot trading.">add_allowed_spot_token</li>
+                <li title="Add a token to the blocked list for spot trading.">add_blocked_spot_token</li>
+                <li title="Remove a token from the allowed list.">remove_allowed_spot_token</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Leverage & Margin <span class="count">(8)</span></h3>
+        <h3>Perpetual Futures — Bot Control <span class="count">(8)</span></h3>
         <ul>
-                <li>set_perp_leverage</li>
-                <li>set_perp_max_leverage</li>
-                <li>set_perp_position_size</li>
-                <li>set_perp_max_exposure</li>
-                <li>set_perp_margin_mode</li>
-                <li>get_perp_margin_info</li>
-                <li>get_perp_margin_ratio</li>
-                <li>get_perp_liquidation_price</li>
+                <li title="Start the perpetuals trading bot.">start_perp_bot</li>
+                <li title="Stop the perpetuals trading bot.">stop_perp_bot</li>
+                <li title="Panic close all open perpetual positions immediately.">sell_all_perps</li>
+                <li title="Return the current perpetuals bot status (running, stopped, etc.).">get_perp_bot_status</li>
+                <li title="Return the tail of the perp bot log.">get_perp_log</li>
+                <li title="Clear the perp bot log file.">clear_perp_log</li>
+                <li title="Return the perp trading and savings wallet balances.">get_perp_wallet_balances</li>
+                <li title="Transfer SOL between trading and savings wallets.">transfer_perp_sol</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Risk & Exits <span class="count">(10)</span></h3>
+        <h3>Perpetual Futures — Positions <span class="count">(6)</span></h3>
         <ul>
-                <li>set_perp_stop_loss</li>
-                <li>set_perp_take_profit_ladder</li>
-                <li>set_perp_trailing_stop</li>
-                <li>set_perp_funding_exit</li>
-                <li>set_perp_liquidation_floor</li>
-                <li>set_perp_position_timeout</li>
-                <li>set_perp_direction</li>
-                <li>set_perp_auto_savings</li>
-                <li>get_perp_exposure</li>
-                <li>get_perp_risk_status</li>
+                <li title="Open a long perpetual position by symbol and notional size.">open_perp_long</li>
+                <li title="Open a short perpetual position by symbol and notional size.">open_perp_short</li>
+                <li title="Close (reduce) a perp position by symbol and percentage.">close_perp_position</li>
+                <li title="Return all open perpetual positions.">get_perp_positions</li>
+                <li title="Return detailed data for a specific perp position.">get_perp_position_detail</li>
+                <li title="Return the P&L for a specific perp position.">get_perp_position_pnl</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Market Filters <span class="count">(6)</span></h3>
+        <h3>Perpetual Futures — Configuration <span class="count">(8)</span></h3>
         <ul>
-                <li>set_perp_market_filters</li>
-                <li>set_perp_allowed_tokens</li>
-                <li>set_perp_blocked_tokens</li>
-                <li>set_perp_signal_mode</li>
-                <li>enable_perp_signal</li>
-                <li>disable_perp_signal</li>
+                <li title="Return the current perp configuration.">get_perp_config</li>
+                <li title="Update a single perp configuration value.">update_perp_config</li>
+                <li title="Update multiple perp config values at once.">update_perp_config_batch</li>
+                <li title="Return the catalog of all available perp config keys.">get_perp_config_catalog</li>
+                <li title="Persist the current perp configuration to disk.">save_perp_settings</li>
+                <li title="Validate the current perp configuration and return any warnings.">validate_perp_config_tool</li>
+                <li title="Enable or disable automatic perp order execution.">set_perp_auto_execute</li>
+                <li title="Enable or disable perp dry-run (practice) mode.">set_perp_dry_run</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Orders <span class="count">(9)</span></h3>
+        <h3>Perpetual Futures — Leverage & Margin <span class="count">(8)</span></h3>
         <ul>
-                <li>set_perp_order_type</li>
-                <li>set_perp_slippage</li>
-                <li>set_perp_poll_intervals</li>
-                <li>set_perp_testnet</li>
-                <li>cancel_all_perp_orders</li>
-                <li>cancel_perp_order</li>
-                <li>modify_perp_order</li>
-                <li>get_perp_open_orders</li>
-                <li>get_perp_order_history</li>
+                <li title="Set leverage for an existing perp position or as default.">set_perp_leverage</li>
+                <li title="Set the perp max leverage cap.">set_perp_max_leverage</li>
+                <li title="Set position sizing: % of wallet as margin and max notional cap.">set_perp_position_size</li>
+                <li title="Set the perp max total exposure in USD.">set_perp_max_exposure</li>
+                <li title="Set perp margin mode to isolated or cross.">set_perp_margin_mode</li>
+                <li title="Return detailed margin information for all open perp positions.">get_perp_margin_info</li>
+                <li title="Return the current perp margin ratio / health.">get_perp_margin_ratio</li>
+                <li title="Return the estimated liquidation price for a perp position.">get_perp_liquidation_price</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Markets & Data <span class="count">(8)</span></h3>
+        <h3>Perpetual Futures — Risk & Exits <span class="count">(10)</span></h3>
         <ul>
-                <li>get_perp_markets</li>
-                <li>get_top_perp_markets</li>
-                <li>search_perp_markets</li>
-                <li>get_perp_market_detail</li>
-                <li>get_perp_market_stats</li>
-                <li>get_perp_candles</li>
-                <li>get_perp_orderbook</li>
-                <li>get_perp_price_changes</li>
+                <li title="Set the hard stop loss percentage for perp positions.">set_perp_stop_loss</li>
+                <li title="Set the take-profit ladder steps string (e.g. '2%:30,5%:30,10%:20').">set_perp_take_profit_ladder</li>
+                <li title="Configure the trailing stop activation and drawdown percentages.">set_perp_trailing_stop</li>
+                <li title="Set the max adverse funding rate before the bot exits a position.">set_perp_funding_exit</li>
+                <li title="Set the minimum liquidation distance floor percentage.">set_perp_liquidation_floor</li>
+                <li title="Set the auto-close position timeout in seconds (0 = disable).">set_perp_position_timeout</li>
+                <li title="Set allowed trade directions: 'long', 'short', or 'both'.">set_perp_direction</li>
+                <li title="Configure auto savings sweep for perp profits.">set_perp_auto_savings</li>
+                <li title="Return total perp exposure and margin usage summary.">get_perp_exposure</li>
+                <li title="Return the current perp risk status (leverage, exposure, etc.).">get_perp_risk_status</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp P&L & Analytics <span class="count">(14)</span></h3>
+        <h3>Perpetual Futures — Market Filters <span class="count">(6)</span></h3>
         <ul>
-                <li>get_perp_pnl_tally</li>
-                <li>reset_perp_pnl_tally</li>
-                <li>get_perp_trade_history</li>
-                <li>get_perp_trade_detail</li>
-                <li>clear_perp_trade_history</li>
-                <li>get_perp_fee_summary</li>
-                <li>refresh_perp_pnl</li>
-                <li>analyze_perp_performance</li>
-                <li>get_perp_funding_cost</li>
-                <li>get_funding_rates</li>
-                <li>get_funding_history</li>
-                <li>get_liquidations</li>
-                <li>get_perp_correlation_matrix</li>
-                <li>get_perp_var_estimate</li>
+                <li title="Set market entry filters: min 24h volume, min open interest, max spread.">set_perp_market_filters</li>
+                <li title="Set the comma-separated list of allowed base tokens (empty = all allowed).">set_perp_allowed_tokens</li>
+                <li title="Set the comma-separated list of blocked base tokens (never trade these).">set_perp_blocked_tokens</li>
+                <li title="Set the perp signal generation mode.">set_perp_signal_mode</li>
+                <li title="Re-enable signal generation for a blocked perp market.">enable_perp_signal</li>
+                <li title="Disable signal generation for a perp market.">disable_perp_signal</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Signals <span class="count">(5)</span></h3>
+        <h3>Perpetual Futures — Orders <span class="count">(9)</span></h3>
         <ul>
-                <li>get_perp_signals</li>
-                <li>get_perp_signal_detail</li>
-                <li>get_perp_signal_summary</li>
-                <li>get_perp_signal_history</li>
-                <li>clear_perp_signal_history</li>
+                <li title="Set the default perp order type: MARKET, LIMIT, POST_ONLY, IOC, or FOK.">set_perp_order_type</li>
+                <li title="Set the max acceptable slippage in basis points for perp orders.">set_perp_slippage</li>
+                <li title="Set polling intervals for market data, position monitoring, and signals.">set_perp_poll_intervals</li>
+                <li title="Switch perp API between testnet and mainnet.">set_perp_testnet</li>
+                <li title="Cancel all open perp orders, optionally filtered by symbol.">cancel_all_perp_orders</li>
+                <li title="Cancel a specific perp order by order ID.">cancel_perp_order</li>
+                <li title="Modify an existing perp order's price and/or size.">modify_perp_order</li>
+                <li title="Return all open perp orders.">get_perp_open_orders</li>
+                <li title="Return recent perp order history.">get_perp_order_history</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Bot Control & Wallet <span class="count">(7)</span></h3>
+        <h3>Perpetual Futures — Markets & Data <span class="count">(9)</span></h3>
         <ul>
-                <li>start_perp_bot</li>
-                <li>stop_perp_bot</li>
-                <li>get_perp_bot_status</li>
-                <li>get_perp_log</li>
-                <li>clear_perp_log</li>
-                <li>get_perp_wallet_balances</li>
-                <li>transfer_perp_sol</li>
+                <li title="Return the list of available perpetual markets.">get_perp_markets</li>
+                <li title="Return top perp markets sorted by volume, open interest, or 24h change.">get_top_perp_markets</li>
+                <li title="Search perp markets by symbol substring with optional volume/leverage filters.">search_perp_markets</li>
+                <li title="Return detailed data for a specific perp market.">get_perp_market_detail</li>
+                <li title="Return aggregate statistics across all perp markets.">get_perp_market_stats</li>
+                <li title="Return recent candle (kline) data for a perp market.">get_perp_candles</li>
+                <li title="Return the latest orderbook snapshot for a perp market.">get_perp_orderbook</li>
+                <li title="Return multi-timeframe price changes for all perp markets.">get_perp_price_changes</li>
+                <li title="Refresh the Perpetuals bot markets table.">refresh_perp_markets</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Perp Risk Levels <span class="count">(2)</span></h3>
+        <h3>Perpetual Futures — P&L & Analytics <span class="count">(14)</span></h3>
         <ul>
-                <li>apply_perp_risk_level</li>
-                <li>preview_perp_risk_level</li>
+                <li title="Return the all-time perp P&L tally.">get_perp_pnl_tally</li>
+                <li title="Reset the all-time perp P&L tally to zero.">reset_perp_pnl_tally</li>
+                <li title="Return perp trade history.">get_perp_trade_history</li>
+                <li title="Return details for a specific perp trade by its index in history.">get_perp_trade_detail</li>
+                <li title="Clear the perp trade history file.">clear_perp_trade_history</li>
+                <li title="Return a summary of fees paid across all perp trades.">get_perp_fee_summary</li>
+                <li title="Force a refresh of the perp P&L tally from trade history.">refresh_perp_pnl</li>
+                <li title="Analyze perp trade performance and return summary stats.">analyze_perp_performance</li>
+                <li title="Return total funding payments paid/received for a position or all.">get_perp_funding_cost</li>
+                <li title="Return current funding rates for all perp markets.">get_funding_rates</li>
+                <li title="Return recent funding payment history for a perp market.">get_funding_history</li>
+                <li title="Return recent large liquidation events.">get_liquidations</li>
+                <li title="Return a simple correlation matrix between open perp positions.">get_perp_correlation_matrix</li>
+                <li title="Return a simple parametric VaR estimate for open positions.">get_perp_var_estimate</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Mirror Whale Management <span class="count">(6)</span></h3>
+        <h3>Perpetual Futures — Signals <span class="count">(5)</span></h3>
         <ul>
-                <li>add_mirror_whale</li>
-                <li>remove_mirror_whale</li>
-                <li>toggle_mirror_whale</li>
-                <li>get_mirror_whales</li>
-                <li>get_mirror_whale_stats</li>
-                <li>get_all_mirror_whale_stats</li>
+                <li title="Return the latest perp trading signals.">get_perp_signals</li>
+                <li title="Return details for a specific perp signal.">get_perp_signal_detail</li>
+                <li title="Return a summary of signal generation stats (counts by type, direction).">get_perp_signal_summary</li>
+                <li title="Return the history of past perp signals (executed and rejected).">get_perp_signal_history</li>
+                <li title="Clear the perp signal history file.">clear_perp_signal_history</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Mirror Configuration <span class="count">(9)</span></h3>
+        <h3>Perpetual Futures — Risk Levels <span class="count">(2)</span></h3>
         <ul>
-                <li>get_mirror_config</li>
-                <li>update_mirror_config_field</li>
-                <li>set_mirror_mode</li>
-                <li>set_mirror_allocation_pct</li>
-                <li>set_mirror_copy_sells</li>
-                <li>set_mirror_dry_run</li>
-                <li>set_mirror_max_trade_usd</li>
-                <li>set_mirror_stop_loss_pct</li>
-                <li>set_mirror_take_profit_pct</li>
+                <li title="Apply a risk level (1-20) to the perp configuration.">apply_perp_risk_level</li>
+                <li title="Preview the perp configuration for a specific risk level (1-20).">preview_perp_risk_level</li>
             </ul>
         </div>
 
       <div class="tool-category">
-        <h3>Mirror Positions & Bot <span class="count">(6)</span></h3>
+        <h3>Perpetual Futures — Wallet <span class="count">(3)</span></h3>
         <ul>
-                <li>get_mirror_trades</li>
-                <li>clear_mirror_trade_history</li>
-                <li>sell_all_mirror_positions</li>
-                <li>get_mirror_bot_status</li>
-                <li>start_mirror_bot</li>
-                <li>stop_mirror_bot</li>
+                <li title="Refresh the Perpetuals wallet balances display.">refresh_perp_wallet_balances</li>
+                <li title="Transfer SOL from the funding wallet to the perpetuals wallet.">fund_perp_wallet</li>
+                <li title="Swap all SOL in the perpetuals wallet to USDC via Jupiter.">swap_perp_sol_to_usdc</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Mode — Whale Management <span class="count">(6)</span></h3>
+        <ul>
+                <li title="Add a whale wallet to monitor. Mode: spot, perp, or both.">add_mirror_whale</li>
+                <li title="Remove a whale wallet from monitoring.">remove_mirror_whale</li>
+                <li title="Enable or disable a whale wallet for mirror trading.">toggle_mirror_whale</li>
+                <li title="Return the list of all monitored whale wallets.">get_mirror_whales</li>
+                <li title="Return performance stats for a specific whale.">get_mirror_whale_stats</li>
+                <li title="Return performance stats for all monitored whales.">get_all_mirror_whale_stats</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Mode — Configuration <span class="count">(9)</span></h3>
+        <ul>
+                <li title="Return the full mirror trading configuration.">get_mirror_config</li>
+                <li title="Update a single mirror configuration field.">update_mirror_config_field</li>
+                <li title="Set mirror mode: 'spot', 'perp', or 'both'.">set_mirror_mode</li>
+                <li title="Set the percentage of wallet allocated to mirror trading.">set_mirror_allocation_pct</li>
+                <li title="Enable or disable copying whale sell trades (not just buys).">set_mirror_copy_sells</li>
+                <li title="Enable or disable dry-run mode for mirror trading.">set_mirror_dry_run</li>
+                <li title="Set the maximum USD per mirrored trade.">set_mirror_max_trade_usd</li>
+                <li title="Set the stop loss percentage for mirror positions.">set_mirror_stop_loss_pct</li>
+                <li title="Set the take profit percentage for mirror positions.">set_mirror_take_profit_pct</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Mirror Mode — Positions & Trades <span class="count">(6)</span></h3>
+        <ul>
+                <li title="Return recent mirror trade history.">get_mirror_trades</li>
+                <li title="Clear all mirror trade history.">clear_mirror_trade_history</li>
+                <li title="Close all mirror positions immediately.">sell_all_mirror_positions</li>
+                <li title="Return the current mirror bot status and statistics.">get_mirror_bot_status</li>
+                <li title="Start the mirror trading bot (copy whale trades).">start_mirror_bot</li>
+                <li title="Stop the mirror trading bot.">stop_mirror_bot</li>
             </ul>
         </div>
 
       <div class="tool-category">
         <h3>Technical Indicators <span class="count">(8)</span></h3>
         <ul>
-                <li>get_all_indicators</li>
-                <li>get_rsi</li>
-                <li>get_macd</li>
-                <li>get_moving_averages</li>
-                <li>get_bollinger_bands</li>
-                <li>get_atr</li>
-                <li>get_volume_analysis</li>
-                <li>get_token_candles</li>
+                <li title="Get all technical indicators for a token in one call.">get_all_indicators</li>
+                <li title="Calculate RSI for a token based on recent candle data.">get_rsi</li>
+                <li title="Calculate MACD for a token.">get_macd</li>
+                <li title="Calculate SMA and EMA for a token.">get_moving_averages</li>
+                <li title="Calculate Bollinger Bands for a token.">get_bollinger_bands</li>
+                <li title="Calculate ATR (Average True Range) for a token.">get_atr</li>
+                <li title="Analyze volume patterns for a token.">get_volume_analysis</li>
+                <li title="Get OHLCV candlestick data for a token.">get_token_candles</li>
             </ul>
         </div>
 
       <div class="tool-category">
         <h3>Market Data <span class="count">(5)</span></h3>
         <ul>
-                <li>get_token_market_data</li>
-                <li>get_token_price</li>
-                <li>get_token_prices</li>
-                <li>get_sol_price</li>
-                <li>get_signal_summary</li>
+                <li title="Get aggregated market data for a token (price, volume, change).">get_token_market_data</li>
+                <li title="Get the current USD price of a token.">get_token_price</li>
+                <li title="Get USD prices for multiple tokens (comma-separated mints).">get_token_prices</li>
+                <li title="Get the current SOL price in USD.">get_sol_price</li>
+                <li title="Return a summary of recent signals by type and strength.">get_signal_summary</li>
             </ul>
         </div>
+
+      <div class="tool-category">
+        <h3>Alert Sounds — Meme Bot <span class="count">(5)</span></h3>
+        <ul>
+                <li title="Enable or disable all Meme bot alert sounds.">set_use_sounds</li>
+                <li title="Set the Meme bot buy alert sound file path.">set_buy_alert_sound</li>
+                <li title="Set the Meme bot sell alert sound file path (WAV/MP3/AAC/M4A/WMA/OGG).">set_sell_alert_sound</li>
+                <li title="Set the Meme bot win alert sound file path (played 5s after a profitable close).">set_win_alert_sound</li>
+                <li title="Set the Meme bot loss alert sound file path (played 5s after a losing close).">set_loss_alert_sound</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Alert Sounds — Perpetuals Bot <span class="count">(5)</span></h3>
+        <ul>
+                <li title="Enable or disable all Perpetuals bot alert sounds.">set_perp_use_sounds</li>
+                <li title="Set the Perpetuals bot buy alert sound file path.">set_perp_buy_alert_sound</li>
+                <li title="Set the Perpetuals bot sell alert sound file path.">set_perp_sell_alert_sound</li>
+                <li title="Set the Perpetuals bot win alert sound file path.">set_perp_win_alert_sound</li>
+                <li title="Set the Perpetuals bot loss alert sound file path.">set_perp_loss_alert_sound</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Alert Sounds — Spot Bot <span class="count">(5)</span></h3>
+        <ul>
+                <li title="Enable or disable all Spot bot alert sounds.">set_spot_use_sounds</li>
+                <li title="Set the Spot bot buy alert sound file path.">set_spot_buy_alert_sound</li>
+                <li title="Set the Spot bot sell alert sound file path.">set_spot_sell_alert_sound</li>
+                <li title="Set the Spot bot win alert sound file path.">set_spot_win_alert_sound</li>
+                <li title="Set the Spot bot loss alert sound file path.">set_spot_loss_alert_sound</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Alert Sound Actions <span class="count">(2)</span></h3>
+        <ul>
+                <li title="Play/test an alert sound. bot: 'meme'|'perp'|'spot'. sound_type: 'buy'|'sell'|'win'|'loss'.">play_alert_sound</li>
+                <li title="Get all configured alert sound paths for all three bots.">get_alert_sound_paths</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Wallet Operations <span class="count">(2)</span></h3>
+        <ul>
+                <li title="Swap SOL to USDC or USDC to SOL in a wallet via Jupiter.">swap_sol_usdc</li>
+                <li title="Get the MoonPay on-ramp URL for buying SOL with a card.">buy_sol_with_card</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>PlayMoney (Simulated Balances) <span class="count">(2)</span></h3>
+        <ul>
+                <li title="Set the simulated (PlayMoney) balance for a wallet. Only works in practice mode.">set_playmoney_balance</li>
+                <li title="Reset all PlayMoney (simulated) balances to zero.">reset_playmoney_balances</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>License & Membership <span class="count">(3)</span></h3>
+        <ul>
+                <li title="Get the current membership/trial status (trial hours remaining, licensed, expired).">get_membership_status</li>
+                <li title="Activate a license key to unlock full membership.">activate_license</li>
+                <li title="Re-check membership/trial status from the license server.">refresh_membership_status</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>Market Refresh <span class="count">(1)</span></h3>
+        <ul>
+                <li title="Refresh the Spot wallet balances display.">refresh_spot_wallet_balances</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>In-App Browser <span class="count">(1)</span></h3>
+        <ul>
+                <li title="Open a URL in the in-app Chromium browser routed through a European proxy.">open_in_app_browser</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>GUI View Switching <span class="count">(1)</span></h3>
+        <ul>
+                <li title="Switch the GUI to a different bot view.">switch_bot_view</li>
+            </ul>
+        </div>
+
+      <div class="tool-category">
+        <h3>About & Info <span class="count">(1)</span></h3>
+        <ul>
+                <li title="Get application version, MCP tool count, and about information.">get_about_info</li>
+            </ul>
+        </div>
+
     </div>
 </section>
 
@@ -1341,7 +1480,7 @@ python -m solana_snipe_bot_mcp</div>
             <div class="trial-feature">
                 <span class="tf-icon">&#10060;</span>
                 <div class="tf-title">Zero Restrictions</div>
-                <div class="tf-desc">During the trial you get <strong>100% full unrestricted access</strong> to every single feature. All 281 MCP tools, all safety filters, all exit rules, all four trading modes. Nothing is locked, nothing is watered down, nothing is demo-only.</div>
+                <div class="tf-desc">During the trial you get <strong>100% full unrestricted access</strong> to every single feature. All 328 MCP tools, all safety filters, all exit rules, all four trading modes. Nothing is locked, nothing is watered down, nothing is demo-only.</div>
             </div>
             <div class="trial-feature">
                 <span class="tf-icon">&#129534;</span>
